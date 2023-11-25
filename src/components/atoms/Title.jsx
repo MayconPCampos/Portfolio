@@ -7,8 +7,12 @@ const Title = styled.div`
   h4,
   h5,
   h6 {
-    color: #d3ffce;
+    color: #fff;
   }
+`;
+
+export const TitleColorSpan = styled.span`
+  color: #7cc9b1;
 `;
 
 export default Title;
