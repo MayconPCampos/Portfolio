@@ -1,5 +1,6 @@
 import Title from "./Title";
 import React from "react";
+import { TitleColorSpan } from "./Title";
 
 export default {
   title: "Components/Atoms/Title",
@@ -9,12 +10,24 @@ export default {
 export const Primary = {
   render: () => (
     <Title>
-      <h1>Meu site</h1>
-      <h2>Meu site</h2>
-      <h3>Meu site</h3>
-      <h4>Meu site</h4>
-      <h5>Meu site</h5>
-      <h6>Meu site</h6>
+      <h1>
+        Meu <TitleColorSpan>site</TitleColorSpan>
+      </h1>
+      <h2>
+        Meu <TitleColorSpan>site</TitleColorSpan>
+      </h2>
+      <h3>
+        Meu <TitleColorSpan>site</TitleColorSpan>
+      </h3>
+      <h4>
+        Meu <TitleColorSpan>site</TitleColorSpan>
+      </h4>
+      <h5>
+        Meu <TitleColorSpan>site</TitleColorSpan>
+      </h5>
+      <h6>
+        Meu <TitleColorSpan>site</TitleColorSpan>
+      </h6>
     </Title>
   ),
 };
