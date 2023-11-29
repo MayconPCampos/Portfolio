@@ -15,3 +15,7 @@ export const Medium = {
 export const Large = {
   render: () => <Box size="lg"></Box>,
 };
+
+export const ExtraLarge = {
+  render: () => <Box size="xl"></Box>,
+};
