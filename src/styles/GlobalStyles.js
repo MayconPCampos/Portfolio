@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
 
 html{
   font-family: "Inter";
+  font-size: 16px;
 }
 
 body{
