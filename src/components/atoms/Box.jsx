@@ -16,11 +16,16 @@ const sizes = {
     height: "300px",
     borderRadius: "30px",
   },
+  xl: {
+    width: "600px",
+    height: "600px",
+    borderRadius: "30px",
+  },
 };
 
 export const BoxStyle = styled.div`
   border: 1px solid #fff;
-  width: ${(props) => props.size.width};
+  max-width: ${(props) => props.size.width};
   height: ${(props) => props.size.height};
   border-radius: ${(props) => props.size.borderRadius};
   display: flex;
@@ -31,6 +36,8 @@ export const BoxStyle = styled.div`
 
 export const Box = ({ size }) => {
   switch (size) {
+    case "xl":
+      return <BoxStyle size={sizes.xl}></BoxStyle>;
     case "lg":
       return <BoxStyle size={sizes.lg}></BoxStyle>;
     case "md":
