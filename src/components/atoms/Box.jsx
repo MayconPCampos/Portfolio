@@ -34,16 +34,16 @@ export const BoxStyle = styled.div`
   justify-content: center;
 `;
 
-export const Box = ({ size }) => {
+export const Box = ({ size, children }) => {
   switch (size) {
     case "xl":
-      return <BoxStyle size={sizes.xl}></BoxStyle>;
+      return <BoxStyle size={sizes.xl}>{children}</BoxStyle>;
     case "lg":
-      return <BoxStyle size={sizes.lg}></BoxStyle>;
+      return <BoxStyle size={sizes.lg}>{children}</BoxStyle>;
     case "md":
-      return <BoxStyle size={sizes.md}></BoxStyle>;
+      return <BoxStyle size={sizes.md}>{children}</BoxStyle>;
     default:
-      return <BoxStyle size={sizes.sm}></BoxStyle>;
+      return <BoxStyle size={sizes.sm}>{children}</BoxStyle>;
   }
 };
 
