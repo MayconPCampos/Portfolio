@@ -3,19 +3,19 @@ import propTypes from "prop-types";
 
 const Normal = styled.p`
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 300;
   color: #ccc;
 `;
 
 const Tiny = styled.p`
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 400;
   color: #fff;
 `;
 
 const Big = styled.p`
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 300;
   color: #fff;
 `;
 
