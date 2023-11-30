@@ -36,7 +36,7 @@ const Title = styled.div`
 `;
 
 export const TitleColorSpan = styled.span`
-  color: #7cc9b1;
+  color: #6eed8a;
 `;
 
 export default Title;
