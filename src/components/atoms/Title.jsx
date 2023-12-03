@@ -8,6 +8,7 @@ const Title = styled.div`
   h5,
   h6 {
     color: #fff;
+    font-weight: 300;
   }
 
   h1 {
@@ -33,10 +34,10 @@ const Title = styled.div`
   h6 {
     font-size: 1.2rem;
   }
-`;
 
-export const TitleColorSpan = styled.span`
-  color: #6eed8a;
+  span {
+    color: #6eed8a;
+  }
 `;
 
 export default Title;
