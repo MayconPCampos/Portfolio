@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import font from "../fonts/Inter-Thin.ttf";
+import fontLight from "../fonts/Inter-Light.ttf";
 import fontRegular from "../fonts/Inter-Regular.ttf";
 import fontSemiBold from "../fonts/Inter-SemiBold.ttf";
 
@@ -7,7 +7,8 @@ const GlobalStyles = createGlobalStyle`
 
 @font-face {
   font-family: "Inter";
-  src: url(${font});
+  src: url(${fontLight});
+  font-weight: 300;
 }
 
 @font-face {
