@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import propTypes from "prop-types";
 
 const sizes = {
   sm: {
@@ -24,7 +25,7 @@ const sizes = {
 };
 
 export const BoxStyle = styled.div`
-  border: 1px solid #fff;
+  border: 1px solid #bbb;
   max-width: ${(props) => props.size.width};
   height: ${(props) => props.size.height};
   border-radius: ${(props) => props.size.borderRadius};
@@ -45,6 +46,14 @@ export const Box = ({ size, children }) => {
     default:
       return <BoxStyle size={sizes.sm}>{children}</BoxStyle>;
   }
+};
+
+Box.defaultProps = {
+  size: "md",
+};
+
+Box.propTypes = {
+  size: propTypes.string,
 };
 
 export default Box;
