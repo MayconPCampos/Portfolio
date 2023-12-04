@@ -29,7 +29,7 @@ html{
 }
 
 body{
-  background-color: #000;
+  background-color: #fff;
 }
 
 `;
