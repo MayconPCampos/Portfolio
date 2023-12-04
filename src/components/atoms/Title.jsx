@@ -7,8 +7,8 @@ const Title = styled.div`
   h4,
   h5,
   h6 {
-    color: #fff;
-    font-weight: 300;
+    color: #333;
+    font-weight: 800;
   }
 
   h1 {
