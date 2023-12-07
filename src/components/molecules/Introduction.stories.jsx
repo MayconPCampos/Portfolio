@@ -1,7 +1,7 @@
 import Introduction from "./Introduction";
 
 export default {
-  title: "Components/Organisms/Introduction",
+  title: "Components/Molecules/Introduction",
   component: Introduction,
 };
 
