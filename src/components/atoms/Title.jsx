@@ -9,10 +9,12 @@ const Title = styled.div`
   h6 {
     color: #333;
     font-weight: 800;
+    text-transform: uppercase;
   }
 
   h1 {
     font-size: 4rem;
+    color: #52b3d9;
   }
 
   h2 {
@@ -36,7 +38,7 @@ const Title = styled.div`
   }
 
   span {
-    color: #6eed8a;
+    color: #68c3a3;
   }
 `;
 
