@@ -6,26 +6,31 @@ const sizes = {
     width: "130px",
     height: "200px",
     borderRadius: "80px",
+    borderColor: "#fff",
   },
   md: {
     width: "300px",
     height: "300px",
     borderRadius: "30px",
+    borderColor: "#bbb",
   },
   lg: {
     width: "600px",
     height: "300px",
     borderRadius: "30px",
+    borderColor: "#bbb",
   },
   xl: {
     width: "600px",
     height: "600px",
     borderRadius: "30px",
+    borderColor: "#bbb",
   },
 };
 
 export const BoxStyle = styled.div`
   border: 1px solid #bbb;
+  border-color: ${(props) => props.size.borderColor};
   max-width: ${(props) => props.size.width};
   height: ${(props) => props.size.height};
   border-radius: ${(props) => props.size.borderRadius};
