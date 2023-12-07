@@ -1,4 +1,9 @@
 import Box from "./Box";
+import styled from "styled-components";
+
+const DarkBackground = styled.div`
+  background-color: #333;
+`;
 
 export default {
   title: "Components/Atoms/Box",
