@@ -19,13 +19,23 @@ const Big = styled.p`
   color: #333;
 `;
 
+const Bold = styled.p`
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+`;
+
 const Text = ({ type, children }) => {
-  if (type === "tiny") {
-    return <Tiny>{children}</Tiny>;
-  } else if (type === "big") {
-    return <Big>{children}</Big>;
-  } else {
-    return <Normal>{children}</Normal>;
+  switch (type) {
+    case "tiny":
+      return <Tiny>{children}</Tiny>;
+    case "big":
+      return <Big>{children}</Big>;
+    case "bold":
+      return <Bold>{children}</Bold>;
+    default:
+      return <Normal>{children}</Normal>;
   }
 };
 
