@@ -7,10 +7,16 @@ const Normal = styled.p`
   color: #333;
 `;
 
+const Bright = styled.p`
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+`;
+
 const Tiny = styled.p`
   font-size: 0.8rem;
   font-weight: 400;
-  color: #333;
+  color: #bbb;
 `;
 
 const Big = styled.p`
@@ -28,6 +34,8 @@ const Bold = styled.p`
 
 const Text = ({ type, children }) => {
   switch (type) {
+    case "bright":
+      return <Bright>{children}</Bright>;
     case "tiny":
       return <Tiny>{children}</Tiny>;
     case "big":
