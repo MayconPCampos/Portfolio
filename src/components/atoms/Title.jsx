@@ -13,8 +13,11 @@ const Title = styled.div`
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #52b3d9;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 800;
   }
 
   h2 {
