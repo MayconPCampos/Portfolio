@@ -5,12 +5,14 @@ const Normal = styled.p`
   font-size: 1rem;
   font-weight: 300;
   color: #333;
+  line-height: 1.5;
 `;
 
 const Bright = styled.p`
   font-size: 1rem;
   font-weight: 300;
   color: #fff;
+  line-height: 1.5;
 `;
 
 const Tiny = styled.p`
