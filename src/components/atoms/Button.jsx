@@ -1,14 +1,22 @@
-import React from "react";
 import styled from "styled-components";
 
 const Button = styled.button`
-  border-radius: 25px;
-  padding: 15px 25px;
-  color: #333;
-  background-color: #6eed8a;
+  border-radius: 5px;
   border: none;
-  font-size: 1rem;
+  border-bottom: 2px solid #3dad86;
+  padding: 15px 25px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: #68c3a3;
+
+  font-size: 0.8rem;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #3dad86;
+  }
 `;
 
 export default Button;
