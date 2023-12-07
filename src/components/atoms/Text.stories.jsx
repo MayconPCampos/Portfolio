@@ -16,3 +16,7 @@ export const Tiny = {
 export const Big = {
   render: () => <Text type="big">Texto big</Text>,
 };
+
+export const Bold = {
+  render: () => <Text type="bold">Texto bold</Text>,
+};
