@@ -9,6 +9,10 @@ export const Normal = {
   render: () => <Text>Texto normal</Text>,
 };
 
+export const Bright = {
+  render: () => <Text type="bright">Texto normal</Text>,
+};
+
 export const Tiny = {
   render: () => <Text type="tiny">Texto tiny</Text>,
 };
