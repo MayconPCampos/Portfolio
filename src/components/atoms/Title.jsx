@@ -7,7 +7,7 @@ const Title = styled.div`
   h4,
   h5,
   h6 {
-    color: #333;
+    color: #2c3e50;
     font-weight: 800;
     text-transform: uppercase;
   }
@@ -25,19 +25,19 @@ const Title = styled.div`
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   h4 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   h5 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   h6 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   span {
