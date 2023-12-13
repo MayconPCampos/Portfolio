@@ -40,10 +40,12 @@ export const BoxStyle = styled.div`
   height: ${(props) => props.size.height};
   border-radius: ${(props) => props.size.borderRadius};
   display: flex;
+  row-gap: 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding: 30px;
 `;
 
 export const Box = ({ size, children }) => {
