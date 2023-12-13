@@ -11,6 +11,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10%;
 `;
 
 const Hero = () => {
