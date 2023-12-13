@@ -13,7 +13,7 @@ const Section = styled.div`
   }
 
   ${BreakAt(BreakpointSize.xl)} {
-    margin: 10%;
+    margin: 7%;
   }
 `;
 
