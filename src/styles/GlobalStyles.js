@@ -30,6 +30,7 @@ html{
 
 body{
   background-color: #fff;
+  min-width: 320px;
 }
 
 `;
