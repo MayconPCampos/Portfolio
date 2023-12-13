@@ -7,24 +7,28 @@ const sizes = {
     height: "200px",
     borderRadius: "80px",
     borderColor: "#fff",
+    minWidth: "130px",
   },
   md: {
     width: "300px",
     height: "300px",
     borderRadius: "30px",
     borderColor: "#bbb",
+    minWidth: "300px",
   },
   lg: {
     width: "600px",
     height: "300px",
     borderRadius: "30px",
     borderColor: "#bbb",
+    minWidth: "600px",
   },
   xl: {
     width: "600px",
     height: "600px",
-    borderRadius: "30px",
+    borderRadius: "15px",
     borderColor: "#bbb",
+    minWidth: "320px",
   },
 };
 
@@ -32,12 +36,14 @@ export const BoxStyle = styled.div`
   border: 1px solid #bbb;
   border-color: ${(props) => props.size.borderColor};
   max-width: ${(props) => props.size.width};
+  min-width: ${(props) => props.minWidth};
   height: ${(props) => props.size.height};
   border-radius: ${(props) => props.size.borderRadius};
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: auto;
 `;
 
 export const Box = ({ size, children }) => {
