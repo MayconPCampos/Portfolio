@@ -5,8 +5,8 @@ import BreakpointSize, { BreakAt } from "../../styles/Breakpoints";
 // grid responsiva
 const GridContainer = styled.div`
   display: grid;
-  gap: 16px;
-
+  gap: ${(props) => props.gap};
+  margin-top: ${(props) => props.marginTop};
   ${BreakAt(BreakpointSize.sm)} {
     grid-template-columns: repeat(${(props) => props.sm}, 1fr);
   }
@@ -27,6 +27,8 @@ GridContainer.defaultProps = {
   md: undefined,
   lg: undefined,
   xl: undefined,
+  marginTop: undefined,
+  gap: "16px",
 };
 
 GridContainer.propTypes = {
@@ -34,6 +36,8 @@ GridContainer.propTypes = {
   md: propTypes.number,
   lg: propTypes.number,
   xl: propTypes.number,
+  marginTop: propTypes.string,
+  gap: propTypes.string,
 };
 
 // ajustes das linhas e colunas de cada item
