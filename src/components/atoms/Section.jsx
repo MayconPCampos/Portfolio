@@ -2,18 +2,21 @@ import styled from "styled-components";
 import BreakpointSize, { BreakAt } from "../../styles/Breakpoints";
 
 const Section = styled.div`
-  margin: 2%;
+  padding: 2%;
+  padding-top: 8%;
 
   ${BreakAt(BreakpointSize.md)} {
-    margin: 5%;
+    padding: 5%;
   }
 
   ${BreakAt(BreakpointSize.lg)} {
-    margin: 5%;
+    padding: 5%;
+    padding-top: 5%;
   }
 
   ${BreakAt(BreakpointSize.xl)} {
-    margin: 7%;
+    padding: 7%;
+    padding-top: 5%;
   }
 `;
 
