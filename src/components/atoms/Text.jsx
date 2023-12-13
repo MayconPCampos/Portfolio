@@ -34,8 +34,15 @@ const Bold = styled.p`
   text-transform: uppercase;
 `;
 
+const Number = styled.p`
+  color: #68c3a3;
+  font-size: 1.5rem;
+`;
+
 const Text = ({ type, children }) => {
   switch (type) {
+    case "number":
+      return <Number>{children}</Number>;
     case "bright":
       return <Bright>{children}</Bright>;
     case "tiny":

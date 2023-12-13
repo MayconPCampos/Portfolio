@@ -24,3 +24,7 @@ export const Big = {
 export const Bold = {
   render: () => <Text type="bold">Texto bold</Text>,
 };
+
+export const Number = {
+  render: () => <Text type="number">123456789</Text>,
+};
