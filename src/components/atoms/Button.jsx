@@ -9,9 +9,10 @@ const Button = styled.button`
   font-weight: 400;
   letter-spacing: 1px;
   background-color: #68c3a3;
-
+  width: fit-content;
   font-size: 0.8rem;
   text-transform: uppercase;
+  margin-top: 30px;
   cursor: pointer;
 
   &:hover {
