@@ -8,6 +8,7 @@ import Section from "../atoms/Section";
 import styled from "styled-components";
 import BreakpointSize, { BreakAt } from "../../styles/Breakpoints";
 import Button from "../atoms/Button";
+import PerfilFrame from "../organisms/PerfilFrame";
 
 const InfoSection = styled.div`
   display: flex;
@@ -53,9 +54,7 @@ const About = () => {
         <Separator />
         <GridContainer sm={1} md={1} lg={8} xl={8} marginTop="5%" gap="50px">
           <InfoFrame>
-            <Box size="xl">
-              <h2>frame</h2>
-            </Box>
+            <PerfilFrame></PerfilFrame>
           </InfoFrame>
           <InfoSection>
             <Title>
