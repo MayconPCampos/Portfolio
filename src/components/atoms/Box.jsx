@@ -24,9 +24,9 @@ const sizes = {
     padding: "0px",
   },
   xl: {
-    width: "600px",
-    height: "600px",
-    borderRadius: "15px",
+    width: "400px",
+    height: "1000px",
+    borderRadius: "10px",
     borderColor: "#bbb",
     padding: "0px",
   },
@@ -36,7 +36,7 @@ export const BoxStyle = styled.div`
   border: 1px solid #bbb;
   border-color: ${(props) => props.size.borderColor};
   max-width: ${(props) => props.size.width};
-  height: ${(props) => props.size.height};
+  max-height: ${(props) => props.size.height};
   border-radius: ${(props) => props.size.borderRadius};
   display: flex;
   row-gap: 20px;
