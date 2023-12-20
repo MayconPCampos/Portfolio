@@ -12,12 +12,22 @@ const Frame = styled.div`
     border-top-left-radius: 10px;
     margin-bottom: 20px;
   }
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+  }
+
+  p:nth-last-child(1) {
+    border: none;
+  }
 `;
 
 const PerfilFrame = () => {
   return (
     <>
-      <Box size="xl">
+      <Box size="lg">
         <Frame>
           <img src={perfilImage} alt="" />
           <Text>
