@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button, { Mini } from "./Button";
 
 export default {
   title: "Components/Atoms/Button",
@@ -7,4 +7,8 @@ export default {
 
 export const Primary = {
   render: () => <Button>primary</Button>,
+};
+
+export const Transparent = {
+  render: () => <Button transparent={true}>primary</Button>,
 };
