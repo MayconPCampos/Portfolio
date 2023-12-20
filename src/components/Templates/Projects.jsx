@@ -2,28 +2,38 @@ import React from "react";
 import Title from "../atoms/Title";
 import Section from "../atoms/Section";
 import Grid from "../atoms/Grid";
-import image from "../assets/project1.jpg";
+import projectImage from "../assets/project1.jpg";
 import styled from "styled-components";
+import Separator from "../atoms/Separator";
+import Card, { CardMedia, CardBody } from "../organisms/ProjectsCard";
 
-const Image = styled.div`
-  img {
-    width: 600px;
-    min-width: 300px;
-    border-radius: 10px;
-  }
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Projects = () => {
   return (
     <Section>
-      <Title>
-        <h2>Meus projetos</h2>
-      </Title>
-      <Grid sm={1} md={1} lg={2} xl={2}>
-        <Image>
-          <img src={image} alt="" />
-        </Image>
-      </Grid>
+      <Container>
+        <Title>
+          <h2>Projetos</h2>
+        </Title>
+        <Separator />
+        <Grid sm={1} md={1} lg={2} xl={2} marginTop="5%" gap="50px">
+          <Card>
+            <CardMedia image={projectImage}></CardMedia>
+            <CardBody>
+              <Title>
+                <h4>
+                  Meu <span>site</span>
+                </h4>
+              </Title>
+            </CardBody>
+          </Card>
+        </Grid>
+      </Container>
     </Section>
   );
 };
