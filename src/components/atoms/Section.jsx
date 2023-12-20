@@ -6,16 +6,16 @@ const Section = styled.div`
   padding-top: 8%;
 
   ${BreakAt(BreakpointSize.md)} {
-    padding: 5%;
+    padding: 10%;
   }
 
   ${BreakAt(BreakpointSize.lg)} {
-    padding: 5%;
+    padding: 10%;
     padding-top: 5%;
   }
 
   ${BreakAt(BreakpointSize.xl)} {
-    padding: 7%;
+    padding: 15%;
     padding-top: 5%;
   }
 `;
