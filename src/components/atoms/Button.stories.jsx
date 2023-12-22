@@ -5,10 +5,14 @@ export default {
   component: Button,
 };
 
-export const Primary = {
-  render: () => <Button>primary</Button>,
+export const Green = {
+  render: () => <Button color="green">primary</Button>,
+};
+
+export const Blue = {
+  render: () => <Button color="blue">primary</Button>,
 };
 
 export const Transparent = {
-  render: () => <Button transparent={true}>primary</Button>,
+  render: () => <Button color="transparent">primary</Button>,
 };
