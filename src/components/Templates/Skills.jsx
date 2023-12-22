@@ -31,12 +31,11 @@ const Skills = () => {
   return (
     <Container>
       <Section>
-        <Grid sm={1} md={1} lg={2} xl={2}>
+        <Grid sm={1} md={1} lg={1} xl={2}>
           <TechInfo>
             <Title>
               <h2>Tecnologias</h2>
             </Title>
-
             <Text type="bright">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               aspernatur sunt officia! Sunt dolorum itaque quo iste pariatur
@@ -46,7 +45,7 @@ const Skills = () => {
               perspiciatis, suscipit iste accusamus odio asperiores veniam modi?
             </Text>
           </TechInfo>
-          <Grid sm={2} md={4} lg={3} xl={4}>
+          <Grid sm={2} md={4} lg={4} xl={4}>
             <TechCard>
               <Box size="sm">
                 <img src={reactImg}></img>
@@ -74,34 +73,6 @@ const Skills = () => {
                 <Text type="number">6 meses</Text>
               </Box>
               <Text type="bright">React</Text>
-            </TechCard>
-            <TechCard>
-              <Box size="sm">
-                <img src={reactImg}></img>
-                <Text type="number">6 meses</Text>
-              </Box>
-              <Text type="bright">Python</Text>
-            </TechCard>
-            <TechCard>
-              <Box size="sm">
-                <img src={reactImg}></img>
-                <Text type="number">6 meses</Text>
-              </Box>
-              <Text type="bright">Flask</Text>
-            </TechCard>
-            <TechCard>
-              <Box size="sm">
-                <img src={reactImg}></img>
-                <Text type="number">6 meses</Text>
-              </Box>
-              <Text type="bright">Git</Text>
-            </TechCard>
-            <TechCard>
-              <Box size="sm">
-                <img src={reactImg}></img>
-                <Text type="number">6 meses</Text>
-              </Box>
-              <Text type="bright">React native</Text>
             </TechCard>
           </Grid>
         </Grid>
