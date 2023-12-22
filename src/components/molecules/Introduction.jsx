@@ -2,6 +2,7 @@ import React from "react";
 import Text from "../atoms/Text";
 import Title from "../atoms/Title";
 import Icon from "../atoms/Icon";
+import Section from "../atoms/Section";
 
 import styled from "styled-components";
 import linkedinIcon from "../assets/linkedin.svg";
@@ -14,6 +15,7 @@ const Container = styled.div`
   align-items: center;
   gap: 10px;
   text-align: center;
+  width: 100%;
 `;
 
 const IconContainer = styled.div`
@@ -23,27 +25,30 @@ const IconContainer = styled.div`
 
 const Introduction = () => {
   return (
-    <Container>
-      <Text type="bold">Maycon P. Campos</Text>
-      <Title>
-        <h1>
-          Desenvolvedor <span>Front-end</span>
-        </h1>
-      </Title>
-      <Text type="bright">
-        Sou um programador<br></br>
-        com conhecimento de tecnologias para desenvolvimento front-end<br></br>
-        HTML, CSS, Javascript, React & React Native
-      </Text>
-      <IconContainer>
-        <Icon>
-          <img src={linkedinIcon} alt="" />
-        </Icon>
-        <Icon>
-          <img src={githubIcon} alt="" />
-        </Icon>
-      </IconContainer>
-    </Container>
+    <Section>
+      <Container>
+        <Text type="bold">Maycon P. Campos</Text>
+        <Title>
+          <h1>
+            Desenvolvedor <span>Front-end</span>
+          </h1>
+        </Title>
+        <Text type="bright">
+          Sou um programador<br></br>
+          com conhecimento de tecnologias para desenvolvimento front-end
+          <br></br>
+          HTML, CSS, Javascript, React & React Native
+        </Text>
+        <IconContainer>
+          <Icon>
+            <img src={linkedinIcon} alt="" />
+          </Icon>
+          <Icon>
+            <img src={githubIcon} alt="" />
+          </Icon>
+        </IconContainer>
+      </Container>
+    </Section>
   );
 };
 
