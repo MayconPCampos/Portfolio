@@ -8,8 +8,9 @@ const StyledMedia = styled.div`
   background-image: url(${(props) => props.image});
   background-position: center center;
   background-size: cover;
-  width: 640px;
-  height: 360px;
+  width: 270px;
+  max-width: 480px;
+  height: 180px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 `;
