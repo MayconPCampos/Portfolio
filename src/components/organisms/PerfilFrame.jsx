@@ -8,8 +8,6 @@ const Frame = styled.div`
   width: 100%;
   img {
     max-width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
     margin-bottom: 20px;
   }
   p {
@@ -17,6 +15,7 @@ const Frame = styled.div`
     margin-right: 20px;
     padding-bottom: 5px;
     border-bottom: 1px solid #eee;
+    line-height: 1.5;
   }
 
   p:nth-last-child(1) {
