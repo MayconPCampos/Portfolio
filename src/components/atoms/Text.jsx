@@ -2,10 +2,10 @@ import styled from "styled-components";
 import propTypes from "prop-types";
 
 const Normal = styled.p`
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 400;
   color: #333;
-  line-height: 1.5;
+  line-height: 2;
 `;
 
 const Bright = styled.p`
@@ -18,7 +18,8 @@ const Bright = styled.p`
 const Tiny = styled.p`
   font-size: 0.8rem;
   font-weight: 400;
-  color: #bbb;
+  color: #333;
+  margin-bottom: 5px;
 `;
 
 const Big = styled.p`
