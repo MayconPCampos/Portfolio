@@ -23,9 +23,7 @@ const Container = styled.div`
 const Hero = () => {
   return (
     <Container>
-      <Section>
-        <Introduction></Introduction>
-      </Section>
+      <Introduction></Introduction>
     </Container>
   );
 };
