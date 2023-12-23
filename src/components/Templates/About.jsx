@@ -81,36 +81,35 @@ const About = () => {
               <h3>Sobre</h3>
             </Title>
             <Text className="info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              esse autem atque? Atque, veritatis. Eum, rerum pariatur. Sint
-              tempora, ratione qui deserunt ea laborum inventore hic quisquam
-              optio, quia error possimus dolore dignissimos at. Itaque deleniti
-              quae corporis ipsam magnam illo totam officiis obcaecati,
-              similique consectetur temporibus placeat explicabo voluptates! Ad
-              repellat officiis dicta vitae explicabo quos debitis eius eos?
+              Muito criativo desde a infância sempre tive paixão por criar e
+              desenvolver novas idéias, alguém muito organizado e que adora
+              trabalhar em equipe!. Gosto de programar, fazer músicas, viajar,
+              fazer trekking, escrever e criar estórias entre outros hobbies.
             </Text>
             <Title>
               <h3>Objetivo</h3>
             </Title>
             <Text className="info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              esse autem atque? Atque, veritatis. Eum, rerum pariatur. Sint
-              tempora, ratione qui deserunt ea laborum inventore hic quisquam
-              optio.
+              Oportunidade de trabalhar para uma companhia onde eu possa
+              desenvolver meu lado profissional e pessoal, fazer parte de uma
+              equipe para compartilhar experiências e atingir o máximo do meu
+              potêncial.
             </Text>
             <Title>
               <h3>O que eu faço?</h3>
             </Title>
             <Text className="info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              esse autem atque? Atque, veritatis. Eum, rerum pariatur. Sint
-              tempora, ratione qui deserunt ea laborum inventore hic quisquam
-              optio, quia error possimus dolore dignissimos at. Itaque deleniti
-              quae corporis.
+              Tenho maior experiência no desenvolvimento de páginas e interfaces
+              para web, tendo também contato com programação mobile, back-end,
+              banco de dados, ciência de dados e criação de containers,
+              atualmente iniciei estudos em inteligência artificial nas área de
+              machine learning e deep learning com objetivos de aplicar e usar
+              essas ferramentas no desenvolvimento de outras áreas como web e
+              mobile.
             </Text>
             <ButtonContainer>
-              <Button color="green">Baixar meu currículo</Button>
-              <Button color="blue">Baixar meu currículo</Button>
+              <Button color="green">Download currículo</Button>
+              <Button color="blue">Vizualizar online</Button>
             </ButtonContainer>
           </InfoSection>
         </GridContainer>
