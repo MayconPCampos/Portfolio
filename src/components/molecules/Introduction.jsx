@@ -34,8 +34,8 @@ const Introduction = () => {
           </h1>
         </Title>
         <Text type="bright">
-          Sou um programador<br></br>
-          com conhecimento de tecnologias para desenvolvimento front-end
+          Programador com conhecimentos<br></br>
+          em tecnologias para desenvolvimento front-end
           <br></br>
           HTML, CSS, Javascript, React & React Native
         </Text>
