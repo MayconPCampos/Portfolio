@@ -5,7 +5,7 @@ import Section from "../atoms/Section";
 import Title from "../atoms/Title";
 import reactImg from "../assets/react.svg";
 import Text from "../atoms/Text";
-import TechCard from "../organisms/TechCard";
+import SkillCard from "../organisms/SkillCard";
 import Grid from "../atoms/Grid";
 
 const Container = styled.div`
@@ -46,34 +46,22 @@ const Skills = () => {
             </Text>
           </TechInfo>
           <Grid sm={2} md={4} lg={4} xl={4}>
-            <TechCard>
-              <Box size="sm">
-                <img src={reactImg}></img>
-                <Text type="number">6 meses</Text>
-              </Box>
-              <Text type="bright">HTML5</Text>
-            </TechCard>
-            <TechCard>
-              <Box size="sm">
-                <img src={reactImg}></img>
-                <Text type="number">6 meses</Text>
-              </Box>
-              <Text type="bright">CSS3</Text>
-            </TechCard>
-            <TechCard>
-              <Box size="sm">
-                <img src={reactImg}></img>
-                <Text type="number">6 meses</Text>
-              </Box>
-              <Text type="bright">Javascript</Text>
-            </TechCard>
-            <TechCard>
-              <Box size="sm">
-                <img src={reactImg}></img>
-                <Text type="number">6 meses</Text>
-              </Box>
-              <Text type="bright">React</Text>
-            </TechCard>
+            <SkillCard>
+              <img src={reactImg}></img>
+              <Text type="bright">Tech</Text>
+            </SkillCard>
+            <SkillCard>
+              <img src={reactImg}></img>
+              <Text type="bright">Tech</Text>
+            </SkillCard>
+            <SkillCard>
+              <img src={reactImg}></img>
+              <Text type="bright">Tech</Text>
+            </SkillCard>
+            <SkillCard>
+              <img src={reactImg}></img>
+              <Text type="bright">Tech</Text>
+            </SkillCard>
           </Grid>
         </Grid>
       </Section>
