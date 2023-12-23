@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Box from "../atoms/Box";
 import Section from "../atoms/Section";
 import Title from "../atoms/Title";
 import reactImg from "../assets/react.svg";

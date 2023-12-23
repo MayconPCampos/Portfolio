@@ -2,7 +2,6 @@ import React from "react";
 import Title from "../atoms/Title";
 import Text from "../atoms/Text";
 import Separator from "../atoms/Separator";
-import Box from "../atoms/Box";
 import GridContainer from "../atoms/Grid";
 import Section from "../atoms/Section";
 import styled from "styled-components";
