@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Section from "../atoms/Section";
 import Title from "../atoms/Title";
-import reactImg from "../assets/react.svg";
 import Text from "../atoms/Text";
 import SkillCard from "../organisms/SkillCard";
 import Grid from "../atoms/Grid";
@@ -26,7 +25,7 @@ const TechInfo = styled.div`
   margin-bottom: 5%;
 `;
 
-const Skills = () => {
+const Skills = ({ images }) => {
   return (
     <Container>
       <Section>
@@ -45,22 +44,14 @@ const Skills = () => {
             </Text>
           </TechInfo>
           <Grid sm={2} md={4} lg={4} xl={4}>
-            <SkillCard>
-              <img src={reactImg}></img>
-              <Text type="bright">Tech</Text>
-            </SkillCard>
-            <SkillCard>
-              <img src={reactImg}></img>
-              <Text type="bright">Tech</Text>
-            </SkillCard>
-            <SkillCard>
-              <img src={reactImg}></img>
-              <Text type="bright">Tech</Text>
-            </SkillCard>
-            <SkillCard>
-              <img src={reactImg}></img>
-              <Text type="bright">Tech</Text>
-            </SkillCard>
+            {images.map((images) => {
+              return (
+                <SkillCard key={images.key}>
+                  <img src={images.url} alt="not" />
+                  <Text type="bright">{images.title}</Text>
+                </SkillCard>
+              );
+            })}
           </Grid>
         </Grid>
       </Section>
