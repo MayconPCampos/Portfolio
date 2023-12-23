@@ -11,7 +11,7 @@ export const Usage = {
   render: () => (
     <>
       <SkillCard>
-        <img src={reactImg}></img>
+        <img src={reactImg} alt=""></img>
         <Text type="bright">Tech</Text>
       </SkillCard>
     </>
