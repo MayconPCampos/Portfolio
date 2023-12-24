@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import propTypes from "prop-types";
 
 const ButtonStyles = {
   green: {
@@ -67,3 +68,13 @@ const Button = ({ children, color }) => {
 };
 
 export default Button;
+
+Button.defaultProps = {
+  color: undefined,
+  children: undefined,
+};
+
+Button.propTypes = {
+  color: propTypes.string,
+  children: propTypes.node,
+};
