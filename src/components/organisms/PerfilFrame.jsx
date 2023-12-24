@@ -41,14 +41,15 @@ const PerfilFrame = () => {
     <>
       <Frame>
         <img src={perfilImage} alt="" />
+
         <Text>
-          <b>Nome:</b> Maycon Pinheiro Campos
+          <b>Residência: </b>Curitiba - PR
         </Text>
         <Text>
-          <b>Residência:</b> Curitiba - PR
+          <b>Contato: </b>(41) 9999-9999
         </Text>
         <Text>
-          <b>Email:</b>mayconpinheirocampos@outlook.com
+          <b>Email: </b>mayconpinheirocampos@outlook.com
         </Text>
       </Frame>
     </>
