@@ -6,7 +6,10 @@ import projectImage from "../assets/project1.jpg";
 import styled from "styled-components";
 import Separator from "../atoms/Separator";
 import Card, { CardMedia, CardBody } from "../organisms/ProjectsCard";
-import Button from "../atoms/Button";
+import Icon from "../atoms/Icon";
+
+import siteLink from "../assets/visit-site.svg";
+import gitLink from "../assets/github.svg";
 
 const Container = styled.div`
   display: flex;
@@ -30,7 +33,16 @@ const Projects = () => {
             <Card>
               <CardMedia image={projectImage}></CardMedia>
               <CardBody>
-                <Button color="transparent">Ver no GitHub</Button>
+                <a href="#">
+                  <Icon>
+                    <img src={siteLink} alt="" />
+                  </Icon>
+                </a>
+                <a href="#">
+                  <Icon>
+                    <img src={gitLink} alt="" />
+                  </Icon>
+                </a>
               </CardBody>
             </Card>
           </div>
@@ -38,7 +50,16 @@ const Projects = () => {
             <Card>
               <CardMedia image={projectImage}></CardMedia>
               <CardBody>
-                <Button color="transparent">Ver no GitHub</Button>
+                <a href="#">
+                  <Icon>
+                    <img src={siteLink} alt="" />
+                  </Icon>
+                </a>
+                <a href="#">
+                  <Icon>
+                    <img src={gitLink} alt="" />
+                  </Icon>
+                </a>
               </CardBody>
             </Card>
           </div>
@@ -46,19 +67,69 @@ const Projects = () => {
             <Card>
               <CardMedia image={projectImage}></CardMedia>
               <CardBody>
-                <Button color="transparent">Ver no GitHub</Button>
+                <a href="#">
+                  <Icon>
+                    <img src={siteLink} alt="" />
+                  </Icon>
+                </a>
+                <a href="#">
+                  <Icon>
+                    <img src={gitLink} alt="" />
+                  </Icon>
+                </a>
               </CardBody>
             </Card>
-            <Button>Vizualizar</Button>
           </div>
           <div>
             <Card>
               <CardMedia image={projectImage}></CardMedia>
               <CardBody>
-                <Button color="transparent">Ver no GitHub</Button>
+                <a href="#">
+                  <Icon>
+                    <img src={siteLink} alt="" />
+                  </Icon>
+                </a>
+                <a href="#">
+                  <Icon>
+                    <img src={gitLink} alt="" />
+                  </Icon>
+                </a>
               </CardBody>
             </Card>
-            <Button>Vizualizar</Button>
+          </div>
+          <div>
+            <Card>
+              <CardMedia image={projectImage}></CardMedia>
+              <CardBody>
+                <a href="#">
+                  <Icon>
+                    <img src={siteLink} alt="" />
+                  </Icon>
+                </a>
+                <a href="#">
+                  <Icon>
+                    <img src={gitLink} alt="" />
+                  </Icon>
+                </a>
+              </CardBody>
+            </Card>
+          </div>
+          <div>
+            <Card>
+              <CardMedia image={projectImage}></CardMedia>
+              <CardBody>
+                <a href="#">
+                  <Icon>
+                    <img src={siteLink} alt="" />
+                  </Icon>
+                </a>
+                <a href="#">
+                  <Icon>
+                    <img src={gitLink} alt="" />
+                  </Icon>
+                </a>
+              </CardBody>
+            </Card>
           </div>
         </Grid>
       </Container>
