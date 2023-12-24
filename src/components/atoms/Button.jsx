@@ -15,7 +15,7 @@ const ButtonStyles = {
     padding: "15px 25px",
     borderColor: "#0c83b3",
     hoverColor: "#fff",
-    hoverBackgroundColor: "#3dad86",
+    hoverBackgroundColor: "#0c83b3",
   },
   transparent: {
     color: "#52b3d9",
@@ -32,7 +32,7 @@ const StyledButton = styled.button`
   border: none;
   border-bottom: 2px solid #3dad86;
   padding: ${(props) => props.type.padding};
-  color: ${(props) => props.type.color};
+
   font-weight: 400;
   letter-spacing: 1px;
   background-color: ${(props) => props.type.backgroundColor};
@@ -42,6 +42,11 @@ const StyledButton = styled.button`
   text-transform: uppercase;
   margin-top: 30px;
   cursor: pointer;
+
+  a {
+    color: ${(props) => props.type.color};
+    text-decoration: none;
+  }
 
   &:hover {
     background-color: ${(props) => props.type.hoverBackgroundColor};
