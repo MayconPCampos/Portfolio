@@ -108,8 +108,12 @@ const About = () => {
               mobile.
             </Text>
             <ButtonContainer>
-              <Button color="green">Download currículo</Button>
-              <Button color="blue">Vizualizar online</Button>
+              <Button color="green">
+                <a href="#">Download currículo</a>
+              </Button>
+              <Button color="blue">
+                <a href="#">Visualizar online</a>
+              </Button>
             </ButtonContainer>
           </InfoSection>
         </GridContainer>
