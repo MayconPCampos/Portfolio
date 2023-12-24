@@ -1,6 +1,9 @@
 import Card, { CardMedia, CardBody } from "./ProjectsCard";
-import Title from "../atoms/Title";
 import projectImage from "../assets/project1.jpg";
+import Icon from "../atoms/Icon";
+
+import siteLink from "../assets/visit-site.svg";
+import gitLink from "../assets/github.svg";
 
 export default {
   title: "Components/organisms/Card",
@@ -12,11 +15,16 @@ export const WithMedia = {
     <Card>
       <CardMedia image={projectImage}></CardMedia>
       <CardBody>
-        <Title>
-          <h4>
-            Meu <span>site</span>
-          </h4>
-        </Title>
+        <a href="#">
+          <Icon>
+            <img src={siteLink} alt="" />
+          </Icon>
+        </a>
+        <a href="#">
+          <Icon>
+            <img src={gitLink} alt="" />
+          </Icon>
+        </a>
       </CardBody>
     </Card>
   ),
