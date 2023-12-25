@@ -58,6 +58,10 @@ const StyledBody = styled.div`
       opacity: 1;
       color: #fff;
     }
+
+    img {
+      width: 50%;
+    }
   }
 `;
 
