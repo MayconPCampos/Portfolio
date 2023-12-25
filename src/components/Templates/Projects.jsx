@@ -2,7 +2,6 @@ import React from "react";
 import Title from "../atoms/Title";
 import Section from "../atoms/Section";
 import Grid from "../atoms/Grid";
-import projectImage from "../assets/project1.jpg";
 import styled from "styled-components";
 import Separator from "../atoms/Separator";
 import Card, { CardMedia, CardBody } from "../organisms/ProjectsCard";
@@ -10,13 +9,13 @@ import Icon from "../atoms/Icon";
 
 import siteLink from "../assets/visit-site.svg";
 import gitLink from "../assets/github.svg";
+import projectsList from "../../data";
 
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
   width: 100%;
 `;
 
@@ -29,108 +28,30 @@ const Projects = () => {
         </Title>
         <Separator />
         <Grid sm={1} md={2} lg={3} xl={3} marginTop="5%" gap="50px">
-          <div>
-            <Card>
-              <CardMedia image={projectImage}></CardMedia>
-              <CardBody>
-                <a href="#">
-                  <Icon>
-                    <img src={siteLink} alt="" />
-                  </Icon>
-                </a>
-                <a href="#">
-                  <Icon>
-                    <img src={gitLink} alt="" />
-                  </Icon>
-                </a>
-              </CardBody>
-            </Card>
-          </div>
-          <div>
-            <Card>
-              <CardMedia image={projectImage}></CardMedia>
-              <CardBody>
-                <a href="#">
-                  <Icon>
-                    <img src={siteLink} alt="" />
-                  </Icon>
-                </a>
-                <a href="#">
-                  <Icon>
-                    <img src={gitLink} alt="" />
-                  </Icon>
-                </a>
-              </CardBody>
-            </Card>
-          </div>
-          <div>
-            <Card>
-              <CardMedia image={projectImage}></CardMedia>
-              <CardBody>
-                <a href="#">
-                  <Icon>
-                    <img src={siteLink} alt="" />
-                  </Icon>
-                </a>
-                <a href="#">
-                  <Icon>
-                    <img src={gitLink} alt="" />
-                  </Icon>
-                </a>
-              </CardBody>
-            </Card>
-          </div>
-          <div>
-            <Card>
-              <CardMedia image={projectImage}></CardMedia>
-              <CardBody>
-                <a href="#">
-                  <Icon>
-                    <img src={siteLink} alt="" />
-                  </Icon>
-                </a>
-                <a href="#">
-                  <Icon>
-                    <img src={gitLink} alt="" />
-                  </Icon>
-                </a>
-              </CardBody>
-            </Card>
-          </div>
-          <div>
-            <Card>
-              <CardMedia image={projectImage}></CardMedia>
-              <CardBody>
-                <a href="#">
-                  <Icon>
-                    <img src={siteLink} alt="" />
-                  </Icon>
-                </a>
-                <a href="#">
-                  <Icon>
-                    <img src={gitLink} alt="" />
-                  </Icon>
-                </a>
-              </CardBody>
-            </Card>
-          </div>
-          <div>
-            <Card>
-              <CardMedia image={projectImage}></CardMedia>
-              <CardBody>
-                <a href="#">
-                  <Icon>
-                    <img src={siteLink} alt="" />
-                  </Icon>
-                </a>
-                <a href="#">
-                  <Icon>
-                    <img src={gitLink} alt="" />
-                  </Icon>
-                </a>
-              </CardBody>
-            </Card>
-          </div>
+          {projectsList.map((project) => {
+            return (
+              <div key={project.key}>
+                <Card>
+                  <CardMedia image={project.imageUrl}></CardMedia>
+                  <CardBody>
+                    <a href={project.link} target="_blank">
+                      <Icon>
+                        <img src={siteLink} alt="" />
+                      </Icon>
+                    </a>
+                    <a href={project.gitHub} target="_blank">
+                      <Icon>
+                        <img src={gitLink} alt="" />
+                      </Icon>
+                    </a>
+                  </CardBody>
+                </Card>
+                <Title>
+                  <h5>{project.title}</h5>
+                </Title>
+              </div>
+            );
+          })}
         </Grid>
       </Container>
     </Section>
