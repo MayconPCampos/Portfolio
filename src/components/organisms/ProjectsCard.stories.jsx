@@ -6,7 +6,7 @@ import siteLink from "../assets/visit-site.svg";
 import gitLink from "../assets/github.svg";
 
 export default {
-  title: "Components/organisms/Card",
+  title: "Components/organisms/ProjectsCard",
   component: Card,
 };
 
