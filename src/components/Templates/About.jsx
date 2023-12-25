@@ -82,9 +82,10 @@ const About = () => {
             </Title>
             <Text className="info-text">
               Muito criativo desde a infância sempre tive paixão por criar e
-              desenvolver novas idéias, alguém muito organizado e que adora
-              trabalhar em equipe!. Gosto de programar, fazer músicas, viajar,
-              fazer trekking, escrever e criar estórias entre outros hobbies.
+              desenvolver novas idéias, sou uma pessoa muito organizada e que
+              adora trabalhar em equipe. Gosto de programar, fazer músicas,
+              viajar, fazer trekking, escrever e criar estórias entre vários
+              outros hobbies.
             </Text>
             <Title>
               <h3>Objetivo</h3>
@@ -104,15 +105,22 @@ const About = () => {
               banco de dados, ciência de dados e criação de containers,
               atualmente iniciei estudos em inteligência artificial nas área de
               machine learning e deep learning com objetivos de aplicar e usar
-              essas ferramentas no desenvolvimento de outras áreas como web e
+              tais ferramentas no desenvolvimento de outras áreas como web e
               mobile.
             </Text>
             <ButtonContainer>
               <Button color="green">
-                <a href="#">Download currículo</a>
+                <a
+                  href="../assets/cv.pdf"
+                  download="Maycon Pinheiro Campos - Currículo"
+                >
+                  Download currículo
+                </a>
               </Button>
               <Button color="blue">
-                <a href="#">Visualizar online</a>
+                <a href="../assets/cv.png" target="_blank">
+                  Visualizar online
+                </a>
               </Button>
             </ButtonContainer>
           </InfoSection>
