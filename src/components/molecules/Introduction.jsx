@@ -40,12 +40,16 @@ const Introduction = () => {
           HTML, CSS, Javascript, React & React Native
         </Text>
         <IconContainer>
-          <Icon>
-            <img src={linkedinIcon} alt="" />
-          </Icon>
-          <Icon>
-            <img src={githubIcon} alt="" />
-          </Icon>
+          <a href="https://github.com/MayconPCampos" target="_blank">
+            <Icon>
+              <img src={githubIcon} alt="" />
+            </Icon>
+          </a>
+          <a href="https://br.linkedin.com/" target="_blank">
+            <Icon>
+              <img src={linkedinIcon} alt="" />
+            </Icon>
+          </a>
         </IconContainer>
       </Container>
     </Section>
