@@ -22,7 +22,7 @@ const Section = styled.div`
   }
 
   ${BreakAt(BreakpointSize.xl)} {
-    width: 1200px;
+    width: 1024px;
     padding: 0%;
     padding-top: 5%;
     padding-bottom: 150px;
