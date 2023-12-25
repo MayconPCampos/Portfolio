@@ -31,6 +31,7 @@ html{
 body{
   background-color: #fff;
   min-width: 320px;
+  margin: 0;
 }
 
 `;
