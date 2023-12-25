@@ -33,7 +33,7 @@ const StyledButton = styled.button`
   border: none;
   border-bottom: 2px solid #3dad86;
   padding: ${(props) => props.type.padding};
-
+  color: ${(props) => props.type.color};
   font-weight: 400;
   letter-spacing: 1px;
   background-color: ${(props) => props.type.backgroundColor};
