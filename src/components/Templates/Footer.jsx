@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Text from "../atoms/Text";
+import propTypes from "prop-types";
 
 const Container = styled.div`
   background-color: #68c3a3;
@@ -19,6 +20,14 @@ const Footer = ({ children }) => {
       <Text type="bright">Maycon Campos © {date}</Text>
     </Container>
   );
+};
+
+Footer.defaultProps = {
+  children: undefined,
+};
+
+Footer.propTypes = {
+  children: propTypes.node,
 };
 
 export default Footer;

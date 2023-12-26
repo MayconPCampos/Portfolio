@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import propTypes from "prop-types";
 
 const Container = styled.div`
   height: 50px;
@@ -19,6 +20,14 @@ const Container = styled.div`
 
 const Icon = ({ children }) => {
   return <Container>{children}</Container>;
+};
+
+Icon.defaultProps = {
+  children: undefined,
+};
+
+Icon.propTypes = {
+  children: propTypes.node,
 };
 
 export default Icon;

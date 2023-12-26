@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import propTypes from "prop-types";
 
 const Card = styled.div`
   max-width: 110px;
@@ -24,4 +25,11 @@ const SkillCard = ({ children }) => {
   return <Card>{children}</Card>;
 };
 
+SkillCard.defaultProps = {
+  children: undefined,
+};
+
+SkillCard.propTypes = {
+  children: propTypes.node,
+};
 export default SkillCard;
