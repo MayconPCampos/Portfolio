@@ -35,12 +35,11 @@ const Skills = ({ images }) => {
               <h2>Tecnologias</h2>
             </Title>
             <Text type="bright">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              aspernatur sunt officia! Sunt dolorum itaque quo iste pariatur
-              ducimus, exercitationem sequi enim id cumque voluptate,
-              consequatur suscipit quas laborum at non voluptates incidunt
-              molestias odio, praesentium quia rem commodi optio? Eum minima
-              perspiciatis, suscipit iste accusamus odio asperiores veniam modi?
+              Python, Flask, Django Framework, Aquitetura REST, APIs, São
+              algumas das ferramentas e conceitos com quais já desenvolvi
+              pequenos projetos, atualmente tenho programado React e Storybook
+              para documentar e testar diferentes idéias durante o
+              desenvolvimento.
             </Text>
           </TechInfo>
           <Grid sm={2} md={4} lg={4} xl={4}>
