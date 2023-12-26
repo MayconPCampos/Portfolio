@@ -13,7 +13,7 @@ const Container = styled.div`
 
   h2 {
     color: #fff;
-    margin-top: 2%;
+    margin-top: 5%;
   }
 `;
 
@@ -38,7 +38,7 @@ const Skills = ({ images }) => {
               Python, Flask, Django Framework, Aquitetura REST, APIs, São
               algumas das ferramentas e conceitos com quais já desenvolvi
               pequenos projetos, atualmente tenho programado React e Storybook
-              para documentar e testar diferentes idéias durante o
+              para documentar e testar novas e diferentes idéias durante o
               desenvolvimento.
             </Text>
           </TechInfo>
