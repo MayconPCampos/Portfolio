@@ -67,7 +67,7 @@ const projectsList = [
 
 export const images = [
   { key: 1, title: "React", url: "../assets/react.svg" },
-  { key: 2, title: "HTML5", url: "../assets/html5.svg" },
+  { key: 2, title: "Storybook", url: "../assets/storybook.svg" },
   { key: 3, title: "CSS3", url: "../assets/css3-alt.svg" },
   { key: 4, title: "Javascript", url: "../assets/js.svg" },
 ];
