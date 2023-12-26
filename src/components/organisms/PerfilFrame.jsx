@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Text from "../atoms/Text";
 
-import perfilImage from "../assets/perfil.png.jpg";
+import perfilImage from "../assets/perfil_edited.jpg";
 
 const Frame = styled.div`
   border: 1px solid #eee;
@@ -11,7 +11,7 @@ const Frame = styled.div`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: flex;
-  row-gap: 20px;
+  row-gap: 10px;
   flex-direction: column;
   align-items: start;
   justify-content: center;
@@ -24,7 +24,6 @@ const Frame = styled.div`
     margin-bottom: 20px;
   }
   p {
-    border-bottom: 1px solid #eee;
     line-height: 1.5;
     margin: 0 10px;
     padding-bottom: 5px;
@@ -44,9 +43,6 @@ const PerfilFrame = () => {
 
         <Text>
           <b>Residência: </b>Curitiba - PR
-        </Text>
-        <Text>
-          <b>Contato: </b>(41) 9999-9999
         </Text>
         <Text>
           <b>Email: </b>mayconpinheirocampos@outlook.com
