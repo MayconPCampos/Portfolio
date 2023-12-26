@@ -1,7 +1,7 @@
 const projectsList = [
   {
     key: 1,
-    title: "Meu portifólio",
+    title: "Meu site",
     imageUrl: "./assets/portifolio.png",
     gitHub: "https://github.com/MayconPCampos/Portfolio",
     link: "#",
