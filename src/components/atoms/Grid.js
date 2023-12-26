@@ -6,7 +6,7 @@ import BreakpointSize, { BreakAt } from "../../styles/Breakpoints";
 const GridContainer = styled.div`
   display: grid;
   gap: ${(props) => props.gap};
-  margin-top: ${(props) => props.marginTop};
+
   ${BreakAt(BreakpointSize.sm)} {
     grid-template-columns: repeat(${(props) => props.sm}, 1fr);
   }
@@ -27,7 +27,6 @@ GridContainer.defaultProps = {
   md: undefined,
   lg: undefined,
   xl: undefined,
-  marginTop: undefined,
   gap: "16px",
 };
 
@@ -36,28 +35,7 @@ GridContainer.propTypes = {
   md: propTypes.number,
   lg: propTypes.number,
   xl: propTypes.number,
-  marginTop: propTypes.string,
   gap: propTypes.string,
-};
-
-// ajustes das linhas e colunas de cada item
-export const GridItem = styled.div`
-  grid-column: ${(props) => props.colStart} / ${(props) => props.colEnd};
-  grid-row: ${(props) => props.rowStart} / ${(props) => props.rowEnd};
-`;
-
-GridItem.defaultProps = {
-  colStart: 0,
-  colEnd: 1,
-  rowStart: 0,
-  rowEnd: 1,
-};
-
-GridItem.propTypes = {
-  colStart: propTypes.number,
-  colEnd: propTypes.number,
-  rowStart: propTypes.number,
-  rowEnd: propTypes.number,
 };
 
 export default GridContainer;
