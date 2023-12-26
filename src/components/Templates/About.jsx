@@ -72,7 +72,7 @@ const About = () => {
           <h2>Sobre mim</h2>
         </Title>
         <Separator />
-        <GridContainer sm={1} md={1} lg={12} xl={12} marginTop="5%" gap="50px">
+        <GridContainer sm={1} md={1} lg={12} xl={12} gap="50px">
           <InfoFrame>
             <PerfilFrame></PerfilFrame>
           </InfoFrame>
