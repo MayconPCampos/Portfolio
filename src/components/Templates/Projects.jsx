@@ -27,7 +27,7 @@ const Projects = () => {
           <h2>Projetos</h2>
         </Title>
         <Separator />
-        <Grid sm={1} md={2} lg={3} xl={3} marginTop="5%" gap="50px">
+        <Grid sm={1} md={2} lg={3} xl={3} gap="50px">
           {projectsList.map((project) => {
             return (
               <div key={project.key}>
