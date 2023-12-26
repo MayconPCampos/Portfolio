@@ -17,7 +17,8 @@ const LittleBox = styled.div`
 const Container = styled.div`
   display: flex;
   gap: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 70px;
 `;
 const Separator = () => (
   <Container>
