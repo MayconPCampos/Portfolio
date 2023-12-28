@@ -37,9 +37,9 @@ const Skills = ({ images }) => {
             <Text type="bright">
               Python, Flask, Django Framework, Aquitetura REST, APIs, São
               algumas das ferramentas e conceitos com quais já desenvolvi
-              pequenos projetos, atualmente tenho programado React e Storybook
-              para documentar e testar novas e diferentes idéias durante o
-              desenvolvimento.
+              pequenos projetos, atualmente tenho programado com React e
+              Storybook para documentar e testar novas e diferentes idéias
+              durante o desenvolvimento.
             </Text>
           </TechInfo>
           <Grid sm={2} md={4} lg={4} xl={4}>
