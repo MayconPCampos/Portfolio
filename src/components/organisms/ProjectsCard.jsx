@@ -8,11 +8,12 @@ const StyledMedia = styled.div`
   background-image: url(${(props) => props.image});
   background-position: center center;
   background-size: cover;
-  width: 270px;
-  max-width: 480px;
+  width: 320px;
+  /* max-width: 0px; */
   height: 180px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  border-bottom: 1px solid #eee;
 `;
 
 export const CardMedia = ({ image }) => <StyledMedia image={image} />;
@@ -40,7 +41,8 @@ const StyledBody = styled.div`
   cursor: pointer;
   transition: all 0.5s;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  column-gap: 60px;
   align-items: center;
 
   h4,
@@ -60,7 +62,7 @@ const StyledBody = styled.div`
     }
 
     img {
-      width: 50%;
+      width: 60%;
     }
   }
 `;
@@ -83,9 +85,12 @@ const StyledCard = styled.div`
   border-radius: 10px;
   width: fit-content;
   background-color: #fff;
-  border: 1px solid #bbb;
+  border: 1px solid #eee;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Card = ({ children }) => <StyledCard>{children}</StyledCard>;
