@@ -5,7 +5,7 @@ import Text from "../atoms/Text";
 import perfilImage from "../assets/perfil_edited.jpg";
 
 const Frame = styled.div`
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
   max-width: 700px;
   max-height: 100%;
   border-bottom-left-radius: 10px;
