@@ -3,8 +3,8 @@ import styled from "styled-components";
 import propTypes from "prop-types";
 
 const Container = styled.div`
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border: 1px solid #fff;
   border-radius: 4px;
   transform: rotate(45deg);
