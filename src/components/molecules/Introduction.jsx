@@ -20,7 +20,7 @@ const Container = styled.div`
 
 const IconContainer = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 40px;
 `;
 
 const Introduction = () => {
