@@ -1,28 +1,29 @@
 const projectsList = [
   {
     key: 1,
-    title: "Meu site",
+    title: "Kapple web app",
+    imageUrl: "./assets/kapple-react.png",
+    gitHub: "https://github.com/MayconPCampos/Kapple",
+    link: "./assets/kapple-react.png",
+  },
+  {
+    key: 2,
+    title: "Meu portifolio",
     imageUrl: "./assets/portifolio.png",
     gitHub: "https://github.com/MayconPCampos/Portfolio",
     link: "#",
   },
+
   {
-    key: 2,
-    title: "Template The Photograph",
+    key: 3,
+    title: "Template responsivo The Photograph",
     imageUrl: "./assets/photograph.png",
     gitHub: "https://github.com/MayconPCampos/Template-responsivo-photograph",
     link: "https://mayconpcampos.github.io/Template-responsivo-photograph/",
   },
   {
-    key: 3,
-    title: "Flask Website",
-    imageUrl: "./assets/flask-website.jpg",
-    gitHub: "https://github.com/MayconPCampos/Flask-Website",
-    link: "./assets/flask-website.jpg",
-  },
-  {
     key: 4,
-    title: "Template Traveling blog",
+    title: "Template responsivo Traveling blog",
     imageUrl: "./assets/traveling-blog.png",
     gitHub:
       "https://github.com/MayconPCampos/Template-responsivo-traveling-blog",
@@ -30,14 +31,15 @@ const projectsList = [
   },
   {
     key: 5,
-    title: "Kapple - em desenvolvimento",
-    imageUrl: "./assets/kapple-react.png",
-    gitHub: "https://github.com/MayconPCampos/Kapple",
-    link: "./assets/kapple-react.png",
+    title: "Flask Website",
+    imageUrl: "./assets/flask-website.jpg",
+    gitHub: "https://github.com/MayconPCampos/Flask-Website",
+    link: "./assets/flask-website.jpg",
   },
+
   {
     key: 6,
-    title: "Kapple - js protótipo",
+    title: "Protótipo kapple -  renderizado com js",
     imageUrl: "./assets/kapple-prototipo.png",
     gitHub: "https://github.com/MayconPCampos/Gerenciador-prototipo",
     link: "https://mayconpcampos.github.io/Gerenciador-prototipo/",
@@ -58,7 +60,7 @@ const projectsList = [
   },
   {
     key: 9,
-    title: "docker - ambiente desenvolvimento",
+    title: "docker - ambiente de desenvolvimento",
     imageUrl: "./assets/docker-image.png",
     gitHub: "https://github.com/MayconPCampos/Ambiente-docker-flask",
     link: "./assets/docker-image.png",
