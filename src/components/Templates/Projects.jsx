@@ -27,7 +27,7 @@ const Projects = () => {
           <h2>Projetos</h2>
         </Title>
         <Separator />
-        <Grid sm={1} md={2} lg={3} xl={3} gap="50px">
+        <Grid sm={1} md={1} lg={2} xl={3} gap="50px">
           {projectsList.map((project) => {
             return (
               <div key={project.key}>
@@ -45,10 +45,10 @@ const Projects = () => {
                       </Icon>
                     </a>
                   </CardBody>
+                  <Title>
+                    <h5>{project.title}</h5>
+                  </Title>
                 </Card>
-                <Title>
-                  <h5>{project.title}</h5>
-                </Title>
               </div>
             );
           })}
