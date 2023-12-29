@@ -15,9 +15,7 @@ export const Portifolio = {
   render: () => (
     <Container>
       <Title>
-        <h1>
-          <span>Seja bem vindo(a)</span>
-        </h1>
+        <h1>Seja bem vindo(a)</h1>
       </Title>
       <Text>
         <p>
