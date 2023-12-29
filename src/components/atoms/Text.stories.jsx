@@ -1,4 +1,5 @@
 import Text from "./Text";
+import StoriesBackground from "./Background";
 
 export default {
   title: "Components/Atoms/Text",
@@ -10,7 +11,11 @@ export const Normal = {
 };
 
 export const Bright = {
-  render: () => <Text type="bright">Texto normal</Text>,
+  render: () => (
+    <StoriesBackground>
+      <Text type="bright">Texto normal</Text>
+    </StoriesBackground>
+  ),
 };
 
 export const Tiny = {
@@ -22,7 +27,11 @@ export const Big = {
 };
 
 export const Bold = {
-  render: () => <Text type="bold">Texto bold</Text>,
+  render: () => (
+    <StoriesBackground>
+      <Text type="bold">Texto bold</Text>
+    </StoriesBackground>
+  ),
 };
 
 export const Number = {
