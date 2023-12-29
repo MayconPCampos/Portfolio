@@ -10,7 +10,7 @@ export default {
   component: Card,
 };
 
-export const WithMedia = {
+export const Usage = {
   render: () => (
     <Card>
       <CardMedia image={projectImage}></CardMedia>
