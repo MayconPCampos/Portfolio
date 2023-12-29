@@ -100,13 +100,13 @@ const About = () => {
               <h3>O que eu faço?</h3>
             </Title>
             <Text className="info-text">
-              Maior experiência no desenvolvimento de páginas e interfaces para
-              web, tendo também contato com programação mobile, back-end, banco
-              de dados, ciência de dados e criação de containers, atualmente
-              iniciei estudos em inteligência artificial nas área de machine
-              learning e deep learning com objetivos de aplicar e usar tais
-              ferramentas no desenvolvimento nas áreas de desenvolvimento web e
-              mobile.
+              Tenho maior experiência no desenvolvimento de páginas e interfaces
+              para web, tendo também contato com programação mobile, back-end,
+              banco de dados, ciência de dados e criação de containers,
+              atualmente iniciei estudos em inteligência artificial nas área de
+              machine learning e deep learning com objetivos de aplicar e usar
+              tais ferramentas no desenvolvimento nas áreas de desenvolvimento
+              web e mobile.
             </Text>
             <ButtonContainer>
               <Button color="green">
