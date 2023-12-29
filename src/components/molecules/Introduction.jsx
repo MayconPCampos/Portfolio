@@ -45,7 +45,10 @@ const Introduction = () => {
               <img src={githubIcon} alt="" />
             </Icon>
           </a>
-          <a href="https://br.linkedin.com/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/maycon-pinheiro-campos-6209a222b/"
+            target="_blank"
+          >
             <Icon>
               <img src={linkedinIcon} alt="" />
             </Icon>
