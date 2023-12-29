@@ -81,9 +81,9 @@ const About = () => {
               <h3>Sobre</h3>
             </Title>
             <Text className="info-text">
-              Muito criativo desde a infância sempre tive paixão por criar e
-              desenvolver novas idéias, sou uma pessoa muito organizada e que
-              adora trabalhar em equipe. Gosto de programar, fazer músicas,
+              Eu sempre gostei de criar e desenvolver novas idéias, sou
+              entusiasta de novas tecnologias de hardware e software e novas
+              áreas dentro da programação. Gosto de programar, fazer músicas,
               viajar, fazer trekking, escrever e criar estórias entre vários
               outros hobbies.
             </Text>
@@ -100,12 +100,12 @@ const About = () => {
               <h3>O que eu faço?</h3>
             </Title>
             <Text className="info-text">
-              Tenho maior experiência no desenvolvimento de páginas e interfaces
-              para web, tendo também contato com programação mobile, back-end,
-              banco de dados, ciência de dados e criação de containers,
-              atualmente iniciei estudos em inteligência artificial nas área de
-              machine learning e deep learning com objetivos de aplicar e usar
-              tais ferramentas no desenvolvimento de outras áreas como web e
+              Maior experiência no desenvolvimento de páginas e interfaces para
+              web, tendo também contato com programação mobile, back-end, banco
+              de dados, ciência de dados e criação de containers, atualmente
+              iniciei estudos em inteligência artificial nas área de machine
+              learning e deep learning com objetivos de aplicar e usar tais
+              ferramentas no desenvolvimento nas áreas de desenvolvimento web e
               mobile.
             </Text>
             <ButtonContainer>

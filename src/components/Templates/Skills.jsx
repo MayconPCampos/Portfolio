@@ -35,10 +35,10 @@ const Skills = ({ images }) => {
               <h2>Tecnologias</h2>
             </Title>
             <Text type="bright">
-              Python, Flask, Django Framework, Aquitetura REST, APIs, São
-              algumas das ferramentas e conceitos com quais já desenvolvi
-              pequenos projetos, atualmente tenho programado com React e
-              Storybook para documentar e testar novas e diferentes idéias
+              Python, Flask, Django Framework, Aquitetura REST, APIs, entre
+              outras são algumas das ferramentas e conceitos com quais já
+              desenvolvi pequenos projetos pessoais, atualmente tenho programado
+              com React e Storybook para documentar e testar diferentes idéias
               durante o desenvolvimento.
             </Text>
           </TechInfo>
