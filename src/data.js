@@ -73,4 +73,22 @@ export const images = [
   { key: 3, title: "CSS3", url: "../assets/css3-alt.svg" },
   { key: 4, title: "Javascript", url: "../assets/js.svg" },
 ];
+
+export const Storybooks = [
+  {
+    key: 1,
+    title: "Kapple web app",
+    imageUrl: "./assets/kapple-react.png",
+
+    link: "./assets/kapple-react.png",
+  },
+  {
+    key: 2,
+    title: "Meu portifolio",
+    imageUrl: "./assets/portifolio.png",
+
+    link: "./assets/portifolio.png",
+  },
+];
+
 export default projectsList;
