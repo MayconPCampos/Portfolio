@@ -118,7 +118,7 @@ const About = () => {
                 </a>
               </Button>
               <Button color="blue">
-                <a href="../assets/cv.png" target="_blank">
+                <a href="../assets/cv.jpg" target="_blank">
                   Visualizar online
                 </a>
               </Button>

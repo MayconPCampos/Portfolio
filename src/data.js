@@ -4,14 +4,14 @@ const projectsList = [
     title: "Kapple web app",
     imageUrl: "./assets/kapple-react.png",
     gitHub: "https://github.com/MayconPCampos/Kapple",
-    link: "./assets/kapple-react.png",
+    link: "https://kapple.vercel.app/",
   },
   {
     key: 2,
     title: "Meu portifolio",
     imageUrl: "./assets/portifolio.png",
     gitHub: "https://github.com/MayconPCampos/Portfolio",
-    link: "#",
+    link: "https://maycon-campos.vercel.app/",
   },
 
   {
