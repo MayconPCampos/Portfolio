@@ -22,8 +22,11 @@ export const Portifolio = {
           Este storybook foi criado para documentar visualmente o site com meu
           portifólio.<br></br>Você pode acessar minha página através do link
           {"  "}
-          <a href="#">meu site</a> para ver mais de meus projetos desenvolvidos
-          até o momento e aqueles que serão públicados no futuro.
+          <a href="https://maycon-campos.vercel.app/" target="_blank">
+            meu site
+          </a>{" "}
+          para ver mais de meus projetos desenvolvidos até o momento e aqueles
+          que serão públicados no futuro.
         </p>
         <p>
           Abaixo você encontra os componentes criados estruturados com Atomic
