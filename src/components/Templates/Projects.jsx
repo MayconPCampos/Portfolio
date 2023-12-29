@@ -35,12 +35,12 @@ const Projects = () => {
                   <Card>
                     <CardMedia image={project.imageUrl}></CardMedia>
                     <CardBody>
-                      <a href={project.link} target="_blank">
+                      <a href={project.link} target="_blank" rel="noreferrer">
                         <Icon>
                           <img src={siteLink} alt="" />
                         </Icon>
                       </a>
-                      <a href={project.gitHub} target="_blank">
+                      <a href={project.gitHub} target="_blank" rel="noreferrer">
                         <Icon>
                           <img src={gitLink} alt="" />
                         </Icon>
@@ -69,7 +69,7 @@ const Projects = () => {
                   <Card>
                     <CardMedia image={story.imageUrl}></CardMedia>
                     <CardBody>
-                      <a href={story.link} target="_blank">
+                      <a href={story.link} target="_blank" rel="noreferrer">
                         <Icon>
                           <img src={siteLink} alt="" />
                         </Icon>
