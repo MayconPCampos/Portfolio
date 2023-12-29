@@ -82,7 +82,7 @@ const About = () => {
             </Title>
             <Text className="info-text">
               Eu sempre gostei de criar e desenvolver novas idéias, sou
-              entusiasta de novas tecnologias de hardware e software e novas
+              entusiasta de novas tecnologias de hardware, software e novas
               áreas dentro da programação. Gosto de programar, fazer músicas,
               viajar, fazer trekking, escrever e criar estórias entre vários
               outros hobbies.
