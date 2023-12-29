@@ -53,7 +53,7 @@ const projectsList = [
   },
   {
     key: 8,
-    title: "flask api dashboard",
+    title: "flask stock news dashboard",
     imageUrl: "./assets/flask-dashboard.jpg",
     gitHub: "https://github.com/MayconPCampos/Flask-dashboard",
     link: "./assets/flask-dashboard.jpg",
