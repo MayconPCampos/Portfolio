@@ -78,16 +78,16 @@ export const Storybooks = [
   {
     key: 1,
     title: "Kapple web app",
-    imageUrl: "./assets/kapple-react.png",
+    imageUrl: "./assets/storybook.png",
 
-    link: "./assets/kapple-react.png",
+    link: "https://658f2e345a3535fab94e2971-gmqitohnry.chromatic.com/?path=/story/seja-bem-vindo-a--apresentacao",
   },
   {
     key: 2,
     title: "Meu portifolio",
-    imageUrl: "./assets/portifolio.png",
+    imageUrl: "./assets/storybook.png",
 
-    link: "./assets/portifolio.png",
+    link: "https://65858e62b73aec278b43182e-luhshxwbtd.chromatic.com/?path=/story/bem-vindo-a-apresenta%C3%A7%C3%A3o--portifolio",
   },
 ];
 
