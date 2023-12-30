@@ -91,10 +91,9 @@ const About = () => {
               <h3>Objetivo</h3>
             </Title>
             <Text className="info-text">
-              Oportunidade de trabalhar para uma companhia onde eu possa
-              desenvolver meu lado profissional e pessoal, fazer parte de uma
-              equipe para compartilhar experiências e atingir o máximo do meu
-              potêncial.
+              Oportunidade de trabalhar para uma companhia onde eu possa aplicar
+              e evoluir meu conhecimento tecnológico, compartilhar experiências
+              e atingir o máximo do meu potêncial.
             </Text>
             <Title>
               <h3>O que eu faço?</h3>
@@ -117,7 +116,7 @@ const About = () => {
                 </a>
               </Button>
               <Button color="blue">
-                <a href="../assets/cv.jpg" target="_blank">
+                <a href="../assets/cv.png" target="_blank">
                   Visualizar online
                 </a>
               </Button>
