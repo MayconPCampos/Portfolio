@@ -1,7 +1,7 @@
 const projectsList = [
   {
     key: 1,
-    title: "Kapple web app",
+    title: "Kapple web app - em desenvolvimento",
     imageUrl: "./assets/kapple-react.png",
     gitHub: "https://github.com/MayconPCampos/Kapple",
     link: "https://kapple.vercel.app/",
