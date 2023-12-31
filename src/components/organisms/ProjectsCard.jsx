@@ -53,7 +53,7 @@ const StyledBody = styled.div`
   }
 
   &:hover {
-    background-color: #68c3a3;
+    background-color: rgba(0, 0, 0, 0.6);
     cursor: default;
 
     h4,

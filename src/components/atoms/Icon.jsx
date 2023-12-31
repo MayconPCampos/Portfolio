@@ -11,10 +11,15 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
 
   img {
     width: 70%;
     transform: rotate(-45deg);
+  }
+
+  &:hover {
+    background-color: #68c3a3;
   }
 `;
 
