@@ -36,7 +36,7 @@ const Skills = ({ images }) => {
             </Title>
             <Text type="bright">
               Python, Flask, Django Framework, REST, APIs, entre outras são
-              algumas das ferramentas e conceitos com quais já desenvolvi
+              algumas das ferramentas e conceitos com as quais já desenvolvi
               pequenos projetos pessoais, atualmente tenho programado com React
               e Storybook para documentar e testar diferentes idéias durante o
               desenvolvimento.
