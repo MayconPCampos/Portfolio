@@ -54,6 +54,7 @@ const StyledBody = styled.div`
 
   &:hover {
     background-color: #68c3a3;
+    cursor: default;
 
     h4,
     a {
