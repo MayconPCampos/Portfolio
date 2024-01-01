@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import fontLight from "../fonts/Inter-Light.ttf";
+import fontLight from "../fonts/RobotoCondensed-Light.ttf";
 import fontRegular from "../fonts/Inter-Regular.ttf";
 import fontSemiBold from "../fonts/Inter-SemiBold.ttf";
+import fontBold from "../fonts/RobotoCondensed-Bold.ttf";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -20,6 +21,12 @@ const GlobalStyles = createGlobalStyle`
 @font-face {
   font-family: "Inter";
   src: url(${fontSemiBold});
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(${fontBold});
   font-weight: 800;
 }
 
