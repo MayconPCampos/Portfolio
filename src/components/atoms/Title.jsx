@@ -11,6 +11,7 @@ const Title = styled.div`
     color: #2c3e50;
     font-weight: 800;
     text-transform: uppercase;
+    font-family: "Roboto";
   }
 
   h1 {
@@ -19,6 +20,7 @@ const Title = styled.div`
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 800;
+    font-family: "Inter";
   }
 
   h2 {
@@ -70,7 +72,7 @@ const Title = styled.div`
 
   ${BreakAt(BreakpointSize.md)} {
     h1 {
-      font-size: 3.5rem;
+      font-size: 3.7rem;
     }
 
     h2 {
