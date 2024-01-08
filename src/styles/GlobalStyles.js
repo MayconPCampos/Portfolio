@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import fontLight from "../fonts/RobotoCondensed-Light.ttf";
-import fontRegular from "../fonts/Inter-Regular.ttf";
-import fontSemiBold from "../fonts/Inter-SemiBold.ttf";
-import fontBold from "../fonts/RobotoCondensed-Bold.ttf";
+import fontLight from "../fonts/Poppins-Light.ttf";
+import fontRegular from "../fonts/Poppins-Medium.ttf";
+import fontSemiBold from "../fonts/Poppins-SemiBold.ttf";
+import fontBold from "../fonts/Poppins-SemiBold.ttf";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -33,6 +33,7 @@ const GlobalStyles = createGlobalStyle`
 html{
   font-family: "Inter";
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body{
