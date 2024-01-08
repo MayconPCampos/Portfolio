@@ -4,7 +4,7 @@ import About from "../src/components/Templates/About";
 import Skills from "../src/components/Templates/Skills";
 import Projects from "../src/components/Templates/Projects";
 import Footer from "../src/components/Templates/Footer";
-import { images } from "./data";
+import { skills } from "./data";
 import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <GlobalStyles />
       <Hero />
       <About />
-      <Skills images={images} />
+      <Skills skills={skills} />
       <Projects />
       <Footer />
     </>
