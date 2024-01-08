@@ -13,7 +13,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   text-align: center;
   width: 100%;
 `;
@@ -27,18 +27,14 @@ const Introduction = () => {
   return (
     <Section>
       <Container>
-        <Text type="bold">Maycon P. Campos</Text>
         <Title>
           <h1>
-            Desenvolvedor <span>Front-end</span>
+            Hi<span> ,</span> I am <br></br>
+            Maycon
+            <br></br>Campos<span> .</span>
           </h1>
         </Title>
-        <Text type="bright">
-          Programador com conhecimentos<br></br>
-          em tecnologias para desenvolvimento front-end
-          <br></br>
-          HTML, CSS, Javascript, React & React Native
-        </Text>
+        <Text type="big">Technology enthusiast and front-end developer</Text>
         <IconContainer>
           <a href="https://github.com/MayconPCampos" target="_blank">
             <Icon>
