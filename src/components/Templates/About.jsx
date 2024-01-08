@@ -18,7 +18,8 @@ const InfoSection = styled.div`
   }
 
   p {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 0;
   }
 
   ${BreakAt(BreakpointSize.sm)} {
@@ -27,32 +28,21 @@ const InfoSection = styled.div`
   }
 
   ${BreakAt(BreakpointSize.lg)} {
-    grid-column: 1 / 9;
+    grid-column: 1 / 7;
     grid-row: 1 / 2;
   }
 `;
 
 const InfoFrame = styled.div`
-  p {
-    margin-bottom: 5px;
-  }
-
   ${BreakAt(BreakpointSize.sm)} {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
   }
 
   ${BreakAt(BreakpointSize.lg)} {
-    grid-column: 9 / -1;
+    grid-column: 8 / -1;
     grid-row: 1 / 2;
   }
-`;
-
-const Container = styled.div`
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 const ButtonContainer = styled.div`
@@ -66,65 +56,55 @@ const ButtonContainer = styled.div`
 
 const About = () => {
   return (
-    <Section>
-      <Container>
-        <Title>
-          <h2>Sobre mim</h2>
-        </Title>
-        <Separator />
+    <>
+      <Title id="about-section">
+        <h2>About me</h2>
+      </Title>
+      <Separator />
+      <Section>
         <GridContainer sm={1} md={1} lg={12} xl={12} gap="50px">
           <InfoFrame>
             <PerfilFrame></PerfilFrame>
           </InfoFrame>
           <InfoSection>
-            <Title>
-              <h3>Sobre</h3>
-            </Title>
             <Text className="info-text">
-              Eu sempre gostei de criar e desenvolver novas idéias, sou
-              entusiasta de novas tecnologias de hardware, software e novas
-              áreas dentro da programação. Gosto de programar, fazer músicas,
-              viajar, fazer trekking, escrever e criar estórias entre vários
-              outros hobbies.
+              I always enjoy creating and developing new ideas. I'm an
+              enthusiast of new hardware and software technologies, as well as
+              new areas of programming. I also enjoy hiking, composing songs,
+              playing musical instruments, writing, and creating new stories,
+              among many other hobbies.
             </Text>
-            <Title>
-              <h3>Objetivo</h3>
-            </Title>
-            <Text className="info-text">
-              Oportunidade de trabalhar para uma companhia onde eu possa aplicar
-              e evoluir meu conhecimento tecnológico, compartilhar experiências
-              e atingir o máximo do meu potêncial.
+            <Text type="grey" className="info-text">
+              I have experience in creating and developing web apps and
+              interfaces. I have also studied mobile development for Android and
+              iOS, back-end development, data modeling, data science, and
+              containers. At the moment, I'm excited about the new artificial
+              intelligence technologies and all the different ways to apply them
+              to speed up and improve front-end and mobile development.
             </Text>
-            <Title>
-              <h3>O que eu faço?</h3>
-            </Title>
-            <Text className="info-text">
-              Tenho maior experiência no desenvolvimento de páginas e interfaces
-              para web, tive também contato com programação mobile, back-end,
-              banco de dados, ciência de dados e criação de containers.
-              Atualmente iniciei estudos em inteligência artificial nas área de
-              machine learning e deep learning com objetivos de aplicar e usar
-              tais ferramentas no desenvolvimento web e mobile.
-            </Text>
+            <Separator />
             <ButtonContainer>
               <Button color="green">
                 <a
                   href="../assets/cv.pdf"
                   download="Maycon Pinheiro Campos - Currículo"
                 >
-                  Download currículo
+                  Download Resume
                 </a>
               </Button>
-              <Button color="blue">
-                <a href="../assets/cv.png" target="_blank">
-                  Visualizar online
+              <Button color="purple">
+                <a
+                  href="../assets/cv.pdf"
+                  download="Maycon Pinheiro Campos - Currículo"
+                >
+                  Download Currículo
                 </a>
               </Button>
             </ButtonContainer>
           </InfoSection>
         </GridContainer>
-      </Container>
-    </Section>
+      </Section>
+    </>
   );
 };
 
