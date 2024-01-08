@@ -2,49 +2,37 @@ import React from "react";
 import Title from "../atoms/Title";
 import Section from "../atoms/Section";
 import Grid from "../atoms/Grid";
-import styled from "styled-components";
 import Separator from "../atoms/Separator";
 import Card, { CardMedia, CardBody } from "../organisms/ProjectsCard";
-import Icon from "../atoms/Icon";
+import styled from "styled-components";
 
 import siteLink from "../assets/visit-site.svg";
-import gitLink from "../assets/github.svg";
 import projectsList, { Storybooks } from "../../data";
 
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
+  justify-content: center;
 `;
 
 const Projects = () => {
   return (
     <>
+      <Title id="projects-section">
+        <h2>Projects</h2>
+      </Title>
+      <Separator />
       <Section>
         <Container>
-          <Title>
-            <h2>Projetos</h2>
-          </Title>
-          <Separator />
-          <Grid sm={1} md={1} lg={2} xl={3} gap="50px">
+          <Grid sm={1} md={2} lg={3} xl={3} gap="90px">
             {projectsList.map((project) => {
               return (
                 <div key={project.key}>
-                  <Card>
+                  <Card href={project.link}>
                     <CardMedia image={project.imageUrl}></CardMedia>
                     <CardBody>
-                      <a href={project.link} target="_blank" rel="noreferrer">
-                        <Icon>
-                          <img src={siteLink} alt="" />
-                        </Icon>
-                      </a>
-                      <a href={project.gitHub} target="_blank" rel="noreferrer">
-                        <Icon>
-                          <img src={gitLink} alt="" />
-                        </Icon>
-                      </a>
+                      <img src={siteLink} alt="" />
                     </CardBody>
                     <Title>
                       <h5>{project.title}</h5>
@@ -56,24 +44,20 @@ const Projects = () => {
           </Grid>
         </Container>
       </Section>
+      <Title>
+        <h2>Storybooks</h2>
+      </Title>
+      <Separator />
       <Section>
         <Container>
-          <Title>
-            <h2>Storybooks</h2>
-          </Title>
-          <Separator />
-          <Grid lg={2} gap="50px">
+          <Grid lg={2} gap="90px">
             {Storybooks.map((story) => {
               return (
                 <div key={story.key}>
-                  <Card>
+                  <Card href={story.link}>
                     <CardMedia image={story.imageUrl}></CardMedia>
                     <CardBody>
-                      <a href={story.link} target="_blank" rel="noreferrer">
-                        <Icon>
-                          <img src={siteLink} alt="" />
-                        </Icon>
-                      </a>
+                      <img src={siteLink} alt="" />
                     </CardBody>
                     <Title>
                       <h5>{story.title}</h5>
