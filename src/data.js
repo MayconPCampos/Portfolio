@@ -11,7 +11,7 @@ const projectsList = [
     title: "My portfolio page",
     imageUrl: "./assets/portifolio.png",
     gitHub: "https://github.com/MayconPCampos/Portfolio",
-    link: "https://maycon-campos.vercel.app/",
+    link: "https://github.com/MayconPCampos/Portfolio",
   },
 
   {
