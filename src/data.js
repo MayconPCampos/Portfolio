@@ -87,12 +87,12 @@ export const Storybooks = [
 export const skills = [
   {
     key: 1,
-    title: "html",
+    title: "HTML",
     progress: 95,
   },
   {
     key: 2,
-    title: "css",
+    title: "CSS",
     progress: 95,
   },
   {
@@ -116,24 +116,14 @@ export const skills = [
     progress: 90,
   },
   {
-    key: 6,
+    key: 7,
     title: "Django",
     progress: 60,
   },
   {
-    key: 6,
+    key: 8,
     title: "MySQL",
     progress: 70,
-  },
-  {
-    key: 6,
-    title: "Java",
-    progress: 50,
-  },
-  {
-    key: 6,
-    title: "C++",
-    progress: 50,
   },
 ];
 
