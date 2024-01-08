@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Text from "../atoms/Text";
 
 import perfilImage from "../assets/perfil_edited.jpg";
 
 const Frame = styled.div`
-  /* border: 1px solid #eee; */
+  border: 1px solid #eee;
   max-width: 700px;
   max-height: 100%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 5px;
   display: flex;
   row-gap: 10px;
   flex-direction: column;
@@ -17,11 +15,11 @@ const Frame = styled.div`
   justify-content: center;
   overflow: hidden;
   margin: auto;
-  padding-bottom: 15px;
 
   img {
+    margin: 0;
     max-width: 100%;
-    margin-bottom: 20px;
+    border-radius: 5px;
   }
   p {
     line-height: 1.5;
@@ -40,13 +38,6 @@ const PerfilFrame = () => {
     <>
       <Frame>
         <img src={perfilImage} alt="" />
-
-        <Text>
-          <b>Residência: </b>Curitiba - PR
-        </Text>
-        <Text>
-          <b>Email: </b>mayconpinheirocampos@outlook.com
-        </Text>
       </Frame>
     </>
   );
