@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const Line = styled.div`
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   border-top: none;
-  width: 40px;
+  width: 100%;
   align-self: center;
 `;
 
@@ -17,16 +17,10 @@ const LittleBox = styled.div`
 const Container = styled.div`
   display: flex;
   gap: 10px;
-  margin-top: 10px;
+  justify-content: center;
+  margin-top: 5px;
   margin-bottom: 70px;
 `;
-const Separator = () => (
-  <Container>
-    <Line />
-    <LittleBox />
-    <LittleBox />
-    <Line />
-  </Container>
-);
+const Separator = () => <Line />;
 
 export default Separator;
