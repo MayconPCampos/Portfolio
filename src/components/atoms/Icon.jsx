@@ -14,7 +14,7 @@ const Container = styled.div`
   transition: all 0.3s;
 
   img {
-    width: 70%;
+    width: 60%;
     transform: rotate(-45deg);
   }
 
