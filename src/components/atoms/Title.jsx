@@ -8,25 +8,27 @@ const Title = styled.div`
   h4,
   h5,
   h6 {
-    color: #2c3e50;
+    color: #333;
     font-weight: 800;
     text-transform: uppercase;
     font-family: "Roboto";
+    text-align: center;
   }
 
   h1 {
     font-size: 1.8rem;
-    color: #52b3d9;
+    color: #fff;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 800;
     font-family: "Inter";
+    line-height: 1.3;
   }
 
   h2 {
     font-size: 1.5rem;
-    margin-top: 8%;
-    margin-bottom: 3%;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   h3 {
@@ -53,15 +55,13 @@ const Title = styled.div`
   ${BreakAt(BreakpointSize.sm)} {
     h1 {
       font-size: 2.5rem;
-      color: #52b3d9;
       margin-top: 0;
       margin-bottom: 0;
       font-weight: 800;
     }
 
     h2 {
-      font-size: 2rem;
-      margin-bottom: 3%;
+      font-size: 1.6rem;
     }
 
     h3 {
@@ -76,8 +76,7 @@ const Title = styled.div`
     }
 
     h2 {
-      font-size: 3rem;
-      margin-bottom: 3%;
+      font-size: 1.7rem;
     }
 
     h3 {
