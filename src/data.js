@@ -41,7 +41,7 @@ const projectsList = [
     key: 6,
     title: "Kapple prototype - js rendering",
     imageUrl: "./assets/kapple-prototipo.png",
-    gitHub: "https://github.com/MayconPCampos/Gerenciador-prototipo",
+    gitHub: "https://mayconpcampos.github.io/Gerenciador-prototipo/",
     link: "https://mayconpcampos.github.io/Gerenciador-prototipo/",
   },
   {
