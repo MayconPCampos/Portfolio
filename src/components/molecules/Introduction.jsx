@@ -29,9 +29,9 @@ const Introduction = () => {
       <Container>
         <Title>
           <h1>
-            Hi<span> ,</span> I am <br></br>
+            Hi<span>,</span> I am <br></br>
             Maycon
-            <br></br>Campos<span> .</span>
+            <br></br>Campos<span>.</span>
           </h1>
         </Title>
         <Text type="big">Technology enthusiast and front-end developer</Text>
