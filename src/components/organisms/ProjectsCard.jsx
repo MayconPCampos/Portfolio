@@ -8,8 +8,7 @@ const StyledMedia = styled.div`
   background-image: url(${(props) => props.image});
   background-position: center center;
   background-size: cover;
-  width: 320px;
-  /* max-width: 0px; */
+  width: 300px;
   height: 180px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -45,16 +44,19 @@ const StyledBody = styled.div`
   column-gap: 60px;
   align-items: center;
 
-  h4,
-  a {
+  h4 {
     opacity: 0;
     margin: 0;
     transition: all 0.5s;
+    text-decoration: none;
+  }
+
+  img {
+    opacity: 0;
   }
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    cursor: default;
+    background-color: rgba(0, 0, 0, 0.4);
 
     h4,
     a {
@@ -63,7 +65,8 @@ const StyledBody = styled.div`
     }
 
     img {
-      width: 60%;
+      width: 20%;
+      opacity: 1;
     }
   }
 `;
@@ -92,9 +95,19 @@ const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
-export const Card = ({ children }) => <StyledCard>{children}</StyledCard>;
+export const Card = ({ children, href }) => (
+  <StyledCard>
+    <a href={href} target="_blank" rel="noreferrer">
+      {children}
+    </a>
+  </StyledCard>
+);
 
 Card.defaultProps = {
   children: undefined,
