@@ -86,8 +86,8 @@ const About = () => {
             <ButtonContainer>
               <Button color="green">
                 <a
-                  href="../assets/cv.pdf"
-                  download="Maycon Pinheiro Campos - Currículo"
+                  href="../assets/resume-maycon-campos.pdf"
+                  download="Resume - Maycon Campos"
                 >
                   Download Resume
                 </a>
