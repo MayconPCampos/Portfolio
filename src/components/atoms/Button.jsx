@@ -10,13 +10,13 @@ const ButtonStyles = {
     hoverColor: "#fff",
     hoverBackgroundColor: "#3dad86",
   },
-  blue: {
+  purple: {
     color: "#fff",
-    backgroundColor: "#52b3d9",
+    backgroundColor: "#c1c6ee",
     padding: "15px 25px",
-    borderColor: "#0c83b3",
+    borderColor: "#b6bdf1",
     hoverColor: "#fff",
-    hoverBackgroundColor: "#0c83b3",
+    hoverBackgroundColor: "#b7bef0",
   },
   transparent: {
     color: "#52b3d9",
@@ -62,8 +62,8 @@ const Button = ({ children, color }) => {
     );
   } else if (color === "green") {
     return <StyledButton type={ButtonStyles.green}>{children}</StyledButton>;
-  } else if (color === "blue") {
-    return <StyledButton type={ButtonStyles.blue}>{children}</StyledButton>;
+  } else if (color === "purple") {
+    return <StyledButton type={ButtonStyles.purple}>{children}</StyledButton>;
   }
 };
 
