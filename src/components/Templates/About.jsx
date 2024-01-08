@@ -68,19 +68,19 @@ const About = () => {
           </InfoFrame>
           <InfoSection>
             <Text className="info-text">
-              I always enjoy creating and developing new ideas. I'm an
-              enthusiast of new hardware and software technologies, as well as
-              new areas of programming. I also enjoy hiking, composing songs,
-              playing musical instruments, writing, and creating new stories,
-              among many other hobbies.
+              I've always enjoyed creating and developing new ideas, I'm an
+              enthusiast of new hardware and software technologies as well as
+              new areas of programming, in my free time I enjoy hiking,
+              composing songs, playing musical instruments, writing, creating
+              new stories and many other hobbies.
             </Text>
             <Text type="grey" className="info-text">
               I have experience in creating and developing web apps and
-              interfaces. I have also studied mobile development for Android and
-              iOS, back-end development, data modeling, data science, and
-              containers. At the moment, I'm excited about the new artificial
-              intelligence technologies and all the different ways to apply them
-              to speed up and improve front-end and mobile development.
+              interfaces, also studied mobile development for Android and iOS,
+              back-end development, data modeling, data science, and containers.
+              At the moment I'm excited about the new artificial intelligence
+              technologies and all the different ways to apply them to speed up
+              and improve front-end and mobile development.
             </Text>
             <Separator />
             <ButtonContainer>
