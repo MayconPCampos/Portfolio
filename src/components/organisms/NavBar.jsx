@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import brandImage from "../assets/code-solid.svg";
+import menuBar from "../assets/bars-solid.svg";
 import BreakpointSize from "../../styles/Breakpoints";
 
 const NavBar = styled.div`
@@ -18,11 +19,12 @@ const NavBar = styled.div`
 
   .menu-icon {
     display: none;
-    cursor: pointer;
   }
 
   ul {
     display: flex;
+
+    margin-left: auto;
     margin-right: 15%;
     column-gap: 100px;
     list-style: none;
@@ -49,8 +51,18 @@ const NavBar = styled.div`
   }
 
   @media (max-width: ${BreakpointSize.md}px) {
+    .brand {
+      display: none;
+    }
+
     .menu-icon {
       display: block;
+      margin-left: 5%;
+      cursor: pointer;
+
+      img {
+        width: 40px;
+      }
     }
 
     ul {
@@ -87,6 +99,9 @@ const MenuBar = () => {
 
   return (
     <NavBar>
+      <div className="menu-icon" onClick={handleMenuToggle}>
+        <img src={menuBar} alt="" />
+      </div>
       <div className="brand" onClick={handleMenuToggle}>
         <img src={brandImage} alt="" />
       </div>
