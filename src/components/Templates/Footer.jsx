@@ -17,7 +17,7 @@ const Footer = ({ children }) => {
 
   return (
     <Container>
-      <Text type="bright">Maycon Campos © {date}</Text>
+      <Text type="bright">©Maycon Campos {date}. All rights reserved.</Text>
     </Container>
   );
 };
