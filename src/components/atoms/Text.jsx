@@ -2,30 +2,39 @@ import styled from "styled-components";
 import propTypes from "prop-types";
 
 const Normal = styled.p`
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #333;
-  line-height: 2;
+  line-height: 1.8;
+`;
+
+const Grey = styled.p`
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777777;
+  line-height: 1.8;
 `;
 
 const Bright = styled.p`
   font-size: 1rem;
   font-weight: 300;
   color: #fff;
-  line-height: 1.5;
+  line-height: 1;
+  margin: 5px 0;
 `;
 
 const Tiny = styled.p`
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #333;
-  margin-bottom: 5px;
+  margin: 0px;
 `;
 
 const Big = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
-  color: #333;
+  color: #fff;
+  margin-bottom: 30px;
 `;
 
 const Bold = styled.p`
@@ -35,15 +44,10 @@ const Bold = styled.p`
   text-transform: uppercase;
 `;
 
-const Number = styled.p`
-  color: #68c3a3;
-  font-size: 1.5rem;
-`;
-
 const Text = ({ type, children }) => {
   switch (type) {
-    case "number":
-      return <Number>{children}</Number>;
+    case "grey":
+      return <Grey>{children}</Grey>;
     case "bright":
       return <Bright>{children}</Bright>;
     case "tiny":
