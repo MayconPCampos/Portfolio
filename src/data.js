@@ -8,26 +8,25 @@ const projectsList = [
   },
   {
     key: 2,
-    title: "My portfolio page",
-    imageUrl: "./assets/portifolio.png",
-    gitHub: "https://github.com/MayconPCampos/Portfolio",
-    link: "https://github.com/MayconPCampos/Portfolio",
-  },
-
-  {
-    key: 3,
     title: "Responsive template The Photograph",
     imageUrl: "./assets/photograph.png",
     gitHub: "https://github.com/MayconPCampos/Template-responsivo-photograph",
     link: "https://mayconpcampos.github.io/Template-responsivo-photograph/",
   },
   {
-    key: 4,
+    key: 3,
     title: "Responsive template Traveling blog",
     imageUrl: "./assets/traveling-blog.png",
     gitHub:
       "https://github.com/MayconPCampos/Template-responsivo-traveling-blog",
     link: "https://mayconpcampos.github.io/Template-responsivo-traveling-blog/",
+  },
+  {
+    key: 4,
+    title: "My portfolio page",
+    imageUrl: "./assets/portifolio.png",
+    gitHub: "https://github.com/MayconPCampos/Portfolio",
+    link: "https://github.com/MayconPCampos/Portfolio",
   },
   {
     key: 5,
