@@ -16,7 +16,7 @@ const TitleContainer = styled.div`
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: #52b3d9;
     padding-bottom: 0px;
     font-weight: 800;
@@ -29,6 +29,7 @@ const TitleContainer = styled.div`
     font-size: 1.5rem;
     margin-top: 50px;
     margin-bottom: 50px;
+    letter-spacing: 4px;
   }
 
   h3 {
@@ -43,9 +44,10 @@ const TitleContainer = styled.div`
   ${BreakAt(BreakpointSize.sm)} {
     h1 {
       font-size: 3rem;
-      margin-top: 0;
+      margin-top: 5px;
       margin-bottom: 0;
       font-weight: 800;
+      line-height: 1;
     }
 
     h2 {

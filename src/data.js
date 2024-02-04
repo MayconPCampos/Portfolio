@@ -1,7 +1,7 @@
 const projectsList = [
   {
     id: 1,
-    title: "React template - Rent a car",
+    title: "React - Rent a car",
     imageUrl: "./assets/images/rent-a-car.png",
     gitHub: "https://github.com/MayconPCampos/Rent-a-car",
     link: "https://rent-a-car-five.vercel.app/",

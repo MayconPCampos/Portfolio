@@ -14,7 +14,7 @@ const DescriptionContainer = styled.div`
   justify-content: center;
   align-items: start;
   width: 100%;
-  margin-bottom: 20%;
+  margin-bottom: 40%;
 
   @media screen and (max-width: 900px) {
     margin: auto;

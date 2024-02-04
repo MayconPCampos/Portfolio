@@ -5,6 +5,7 @@ const CircleContainer = styled.div`
   width: fit-content;
   text-align: center;
   animation: all 1s;
+  margin-top: 30px;
 `;
 
 const Circle = styled.div`

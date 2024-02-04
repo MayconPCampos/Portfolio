@@ -18,6 +18,10 @@ const ProfileContainer = styled.div`
     max-height: 100%;
   }
 
+  @media screen and (max-width: 900px) {
+    margin-top: 100px;
+  }
+
   &::before {
     content: "";
     position: absolute;
