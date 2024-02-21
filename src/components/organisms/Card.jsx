@@ -27,6 +27,7 @@ const CardImage = styled.img`
   transition: opacity 0.5s;
   margin-bottom: 5px;
   opacity: 0.8;
+  border: 1px solid #eee;
 
   &:hover {
     opacity: 1;
@@ -35,12 +36,13 @@ const CardImage = styled.img`
 
 const CardDescription = styled.p`
   font-size: 0.8rem;
+  letter-spacing: 0px;
 `;
 
 const Card = ({ image, description, url }) => {
   return (
     <CardContainer>
-      <CardLink href={url} target="_blank" rel="noreferrer">
+      <CardLink href={url} rel="noreferrer">
         <CardImage src={image} alt="placeholder" />
         <CardDescription>{description}</CardDescription>
       </CardLink>

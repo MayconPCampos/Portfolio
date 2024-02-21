@@ -126,7 +126,7 @@ const ContactForm = () => {
           <Input type="text" name="subject" />
           <Label>Message</Label>
           <Textarea name="message" rows={10} />
-          <Button type="submit" color="green" title="Send email" />
+          <Button type="submit" color="#68c3a3" title="Send email" />
         </Form>
       </Section>
     </div>

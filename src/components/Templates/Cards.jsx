@@ -5,9 +5,10 @@ import Card from "../organisms/Card";
 import projectsList from "../../data";
 import Section from "../atoms/Section";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const Container = styled.div`
-  .scrolling {
+  .isVisible {
     opacity: 0;
     transform: translateY(150px);
     transition: all 1.8s;
@@ -18,7 +19,7 @@ const CardListContainer = styled.div`
   transition: all 1.8s;
 `;
 
-const Projects = () => {
+const Projects = ({ visibilityYTreshold }) => {
   const [scrollOffset, setScrollOffset] = useState(0);
   const handleScroll = () => {
     setScrollOffset(window.scrollY);
@@ -37,14 +38,16 @@ const Projects = () => {
         <h2>Projects</h2>
       </Title>
       <hr />
-      <CardListContainer className={scrollOffset > 2000 ? "" : "scrolling"}>
+      <CardListContainer
+        className={scrollOffset > visibilityYTreshold ? "" : "isVisible"}
+      >
         <Section>
           <Grid container spacing={{ xs: 4, md: 8 }} justifyContent="center">
             {projectsList.map((project) => {
               return (
                 <Grid sm={12} md={6} xl={4} key={project.id}>
                   <Card
-                    url={project.link}
+                    url={project.page}
                     image={project.imageUrl}
                     description={project.title}
                   />
@@ -56,6 +59,10 @@ const Projects = () => {
       </CardListContainer>
     </Container>
   );
+};
+
+Projects.propTypes = {
+  visibilityYTreshold: PropTypes.number,
 };
 
 export default Projects;

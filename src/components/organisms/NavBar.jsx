@@ -3,6 +3,8 @@ import styled from "styled-components";
 import brandLogoDark from "../../assets/images/logo.png";
 import brandLogoLight from "../../assets/images/logo2.png";
 import menuIcon from "../../assets/images/bars-solid.svg";
+import { useParams } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Header = styled.div`
   .nav-background {
@@ -61,7 +63,7 @@ const Navbar = styled.div`
   transition: all 0.3s;
 
   @media (max-width: 768px) {
-    background-color: #111;
+    background-color: #333;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
   }
 `;
@@ -80,7 +82,7 @@ const NavList = styled.ul`
     width: 100%;
     flex-direction: column;
     align-items: start;
-    background-color: #111;
+    background-color: #333;
     padding: 0;
     margin: 0;
     height: 0;
@@ -132,52 +134,65 @@ const NavLink = styled.a`
   }
 `;
 
-const MenuBar = () => {
+const MenuBar = ({ isBackgroundVisible, isHomePage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolling, setIsScrolling] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Change navbar color after scrolling
-  const handleScroll = () => {
-    let heroPositionY = document.querySelector("#home").offsetHeight;
-    setIsScrolling(
-      window.scrollY >= heroPositionY - 70 && window.innerWidth > 768
-    );
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // Use routes URL params to create page navigation
+  let pageId = useParams().id;
+  let projectLocalLink = "/project/" + String(pageId) + "/#projects";
+  let contactLocalLink = "/project/" + String(pageId) + "/#contact";
 
   return (
     <Header>
-      <Navbar className={isScrolling ? "nav-background" : ""}>
+      <Navbar className={isBackgroundVisible ? "nav-background" : ""}>
         <MenuMobileIcon onClick={handleMenuToggle}>
           <img src={menuIcon} alt="" />
         </MenuMobileIcon>
         <Brand onClick={handleMenuToggle}>
           <a href="#home">
-            <img src={isScrolling ? brandLogoLight : brandLogoDark} alt="" />
+            <img
+              src={isBackgroundVisible ? brandLogoLight : brandLogoDark}
+              alt=""
+            />
           </a>
         </Brand>
-        <NavList className={isMenuOpen ? "open" : ""}>
-          <NavItem>
-            <NavLink href="#about">About</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#projects">My Projects</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#contact">Contact me</NavLink>
-          </NavItem>
-        </NavList>
+        {isHomePage ? (
+          <NavList className={isMenuOpen ? "open" : ""}>
+            <NavItem>
+              <NavLink href="#about">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#projects">My Projects</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#contact">Contact me</NavLink>
+            </NavItem>
+          </NavList>
+        ) : (
+          <NavList className={isMenuOpen ? "open" : ""}>
+            <NavItem>
+              <NavLink href="#home">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href={projectLocalLink}>My Projects</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href={contactLocalLink}>Contact me</NavLink>
+            </NavItem>
+          </NavList>
+        )}
       </Navbar>
     </Header>
   );
+};
+
+MenuBar.propTypes = {
+  isScrolling: PropTypes.bool,
+  isHomePage: PropTypes.bool,
 };
 
 export default MenuBar;

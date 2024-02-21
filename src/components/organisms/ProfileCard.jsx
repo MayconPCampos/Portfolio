@@ -6,19 +6,20 @@ import instagramSvg from "../../assets/images/instagram.svg";
 import backgroundImage from "../../assets/images/pic1.jpg";
 
 const ProfileContainer = styled.div`
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 80%;
+  max-height: 80%;
   margin: auto;
   margin-bottom: 70px;
   position: relative;
   border-radius: 4px;
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
     max-height: 100%;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1199px) {
     margin-top: 100px;
   }
 

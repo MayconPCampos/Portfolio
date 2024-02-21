@@ -12,7 +12,7 @@ const Home = () => {
       <Hero />
       <About />
       <Skills skills={skills} />
-      <Cards />
+      <Cards visibilityYTreshold={2000} />
       <Contact />
       <Footer />
     </>

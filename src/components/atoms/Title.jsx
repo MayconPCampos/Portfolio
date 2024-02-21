@@ -21,15 +21,17 @@ const TitleContainer = styled.div`
     padding-bottom: 0px;
     font-weight: 800;
     font-family: "Poppins";
-    line-height: 1.3;
+    line-height: 1;
     text-shadow: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 50px;
     margin-bottom: 50px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
   }
 
   h3 {

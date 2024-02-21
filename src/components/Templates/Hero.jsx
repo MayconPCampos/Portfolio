@@ -47,13 +47,6 @@ const HeroContent = styled.div`
   transition: opacity 0.6s;
   padding-bottom: 40px;
 
-  .hero-description {
-    color: #fff;
-    font-weight: 100;
-    font-size: 1rem;
-    letter-spacing: 2px;
-  }
-
   button {
     margin-top: 15px;
   }
@@ -66,58 +59,78 @@ const Name = styled.p`
   margin-bottom: 0;
   font-size: 0.9rem;
   letter-spacing: 3px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const HeroSubtitle = styled.p`
   margin-top: 10px;
-  font-size: 1.2rem;
   margin-bottom: 0px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 2px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const Hero = () => {
   const [scrollOffset, setScrollOffset] = useState(0);
-  const [isHeroLoaded, setIsHeroLoaded] = useState(false);
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   // opacity effect on loading page
-  if (!isHeroLoaded) {
+  if (!isPageLoaded) {
     setTimeout(() => {
-      setIsHeroLoaded(true);
+      setIsPageLoaded(true);
     }, 500);
   }
 
   const handleScroll = () => {
+    // set the scroll Y position to create hidden effect in the hero content component
     setScrollOffset(window.scrollY);
 
+    // get the hero start Y position on the screen to change the menubar background color
+    let heroPositionY = document.querySelector("#home").offsetHeight;
+    setIsScrolling(
+      window.scrollY >= heroPositionY - 70 && window.innerWidth > 768
+    );
+
+    // parallax effect in hero (-200 to positioning the image on center of the screen)
     let heroTopPosition = document
       .querySelector("#home")
       .getBoundingClientRect().top;
 
-    // parallax effect in hero (-200 to positioning the image on center of the screen)
-    let newPositionY = heroTopPosition * 0.5 - 200 + "px";
-
-    //parallax effect in Hero background
+    let newBackgroundPositionY = heroTopPosition * 0.5 - 200 + "px";
     document.querySelector(".hero-background").style.backgroundPositionY =
-      newPositionY;
+      newBackgroundPositionY;
 
     //parallax effect in Hero background overlay
     document.querySelector(
       ".hero-background-overlay"
-    ).style.backgroundPositionY = newPositionY;
+    ).style.backgroundPositionY = newBackgroundPositionY;
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     // Cleanup the event listener on component unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div id="home">
-      <MenuBar isHeroLoaded={isHeroLoaded} />
+      <MenuBar
+        isHeroLoaded={isPageLoaded}
+        isBackgroundVisible={isScrolling}
+        isHomePage={true}
+      />
       <HeroBackground className="hero-background">
         <BackgroundOverlay className="hero-background-overlay" />
         <HeroContent
@@ -126,7 +139,7 @@ const Hero = () => {
           }}
           className={
             (scrollOffset > 120 ? "hidden" : "") ||
-            (isHeroLoaded ? "" : "hidden")
+            (!isPageLoaded ? "hidden" : "")
           }
         >
           <Name type="white">Maycon P. Campos</Name>
@@ -135,9 +148,7 @@ const Hero = () => {
               Software <span>Developer</span>
             </h1>
           </Title>
-          <HeroSubtitle className="hero-description">
-            Programmer & technology enthusiast
-          </HeroSubtitle>
+          <HeroSubtitle>Programmer & technology enthusiast</HeroSubtitle>
         </HeroContent>
       </HeroBackground>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../atoms/Button";
+import { useLocation } from "react-router-dom";
 
 const HireMeContainer = styled.div`
   background-color: #68c3a3;
@@ -26,10 +27,11 @@ const Message = styled.p`
 `;
 
 const HireMeSection = () => {
+  const location = useLocation().pathname + "#message";
   return (
     <HireMeContainer>
       <Message>I'm available for full-time opportunities</Message>
-      <Button href="#message" title="Hire me" />
+      <Button color="#68c3a3" href={location} title="Hire me" />
     </HireMeContainer>
   );
 };

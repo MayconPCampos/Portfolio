@@ -5,6 +5,7 @@ import backgroundImg from "../../assets/images/bg3.avif";
 import { softSkills } from "../../data";
 import CircleBar from "../atoms/ProgressCircle";
 import ProgressBar from "../atoms/ProgressBar";
+import PropTypes from "prop-types";
 
 const Parallax = styled.div`
   width: 100%;
@@ -55,6 +56,7 @@ const Skills = ({ skills }) => {
   }, []);
   return (
     <div className="skill-section">
+      <hr></hr>
       <Title>
         <h2>Skills</h2>
       </Title>
@@ -62,13 +64,14 @@ const Skills = ({ skills }) => {
         <SkillsContainer>
           <SkillBars>
             {skills.map((skill) => {
-              return <ProgressBar data={skill} />;
+              return <ProgressBar data={skill} key={skill.title} />;
             })}
           </SkillBars>
           <CirclesContainer>
             {softSkills.map((softSkill) => {
               return (
                 <CircleBar
+                  key={softSkill.label}
                   degrees={softSkill.degrees}
                   percent={softSkill.percent}
                   label={softSkill.label}
@@ -80,6 +83,10 @@ const Skills = ({ skills }) => {
       </Parallax>
     </div>
   );
+};
+
+Skills.propTypes = {
+  skills: PropTypes.array,
 };
 
 export default Skills;

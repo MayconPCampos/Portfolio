@@ -6,15 +6,19 @@ import styled from "styled-components";
 import ProfileCard from "../organisms/ProfileCard";
 import Section from "../atoms/Section";
 
-const DescriptionContainer = styled.div`
+const AboutSection = styled.div`
+  padding-bottom: 2%;
+`;
+
+export const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: start;
-  padding-right: 50px;
+  text-align: justify;
   justify-content: center;
   align-items: start;
   width: 100%;
-  margin-bottom: 40%;
+  box-sizing: border-box;
+  padding-right: 5%;
 
   @media screen and (max-width: 900px) {
     margin: auto;
@@ -53,14 +57,14 @@ const InfoParagraph = styled.div`
 
 const About = () => {
   return (
-    <div id="about">
+    <AboutSection id="about">
       <Title>
         <h2>About me</h2>
       </Title>
       <hr></hr>
       <Section>
         <Grid container spacing={1}>
-          <Grid sm={12} md={6} lg={7} xl={7}>
+          <Grid sm={12} md={12} lg={7} xl={7}>
             <DescriptionContainer>
               <div>
                 <Text>
@@ -98,13 +102,12 @@ const About = () => {
               </InfoParagraph>
             </DescriptionContainer>
           </Grid>
-          <Grid sm={12} md={6} lg={5} xl={5}>
+          <Grid sm={12} md={12} lg={5} xl={5}>
             <ProfileCard />
           </Grid>
         </Grid>
       </Section>
-      <hr />
-    </div>
+    </AboutSection>
   );
 };
 

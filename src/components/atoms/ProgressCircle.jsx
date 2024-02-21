@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const CircleContainer = styled.div`
   width: fit-content;
@@ -23,7 +24,7 @@ const Circle = styled.div`
   }
 
   .is-animated {
-    animation: conic-effect 2s ease-in-out forwards;
+    animation: conic-effect 1.5s ease-in-out forwards;
 
     @keyframes conic-effect {
       0% {
@@ -88,6 +89,12 @@ const CircleBar = ({ degrees, percent, label }) => {
       <Label className="label">{label}</Label>
     </CircleContainer>
   );
+};
+
+CircleBar.propTypes = {
+  degrees: PropTypes.number,
+  percent: PropTypes.number,
+  label: PropTypes.string,
 };
 
 export default CircleBar;

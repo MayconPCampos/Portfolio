@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Text from "./Text";
+import PropTypes from "prop-types";
 
 const ProgressBarWrapper = styled.div`
-  width: 600px;
+  width: 500px;
 
   @media screen and ((min-width: 992px )and (max-width: 1600px)) {
     width: 400px;
@@ -22,13 +23,13 @@ const ProgressBarFill = styled.div`
   display: block;
   width: 100%;
   height: 10px;
-  border: 1px solid #111;
+  border: 1px solid #222;
   border-radius: 5px;
   background-color: #333;
   margin: 0;
 
   .is-loading {
-    animation: progress 2s ease-in-out forwards;
+    animation: progress 1s ease-in-out forwards;
 
     @keyframes progress {
       0% {
@@ -87,6 +88,10 @@ const ProgressBar = ({ data }) => {
       </ProgressBarContainer>
     </ProgressBarWrapper>
   );
+};
+
+ProgressBar.propTypes = {
+  data: PropTypes.object,
 };
 
 export default ProgressBar;
