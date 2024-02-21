@@ -31,7 +31,7 @@ const HireMeSection = () => {
   return (
     <HireMeContainer>
       <Message>I'm available for full-time opportunities</Message>
-      <Button color="#68c3a3" href={location} title="Hire me" />
+      <Button color="#68c3a3" href={location} title="Hire me" target="_self" />
     </HireMeContainer>
   );
 };

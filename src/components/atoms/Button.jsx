@@ -18,20 +18,28 @@ const ButtonLink = styled.a`
   padding: 15px 20px;
 `;
 
-const Button = ({ color, href, title }) => {
+const Button = ({ color, href, title, target }) => {
   return (
     <StyledButton color={color}>
-      <ButtonLink href={href} target="_blank">
+      <ButtonLink href={href} target={target}>
         {title}
       </ButtonLink>
     </StyledButton>
   );
 };
 
-export default Button;
-
 Button.propTypes = {
   href: PropTypes.string,
   title: PropTypes.string,
   color: PropTypes.string,
+  target: PropTypes.string,
 };
+
+Button.defaultProps = {
+  href: undefined,
+  title: undefined,
+  color: undefined,
+  target: "_blank",
+};
+
+export default Button;
