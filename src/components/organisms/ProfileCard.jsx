@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import gitHubSvg from "../../assets/images/github.svg";
 import emailSvg from "../../assets/images/envelope-regular.svg";
-import instagramSvg from "../../assets/images/instagram.svg";
 import backgroundImage from "../../assets/images/pic1.jpg";
 
 const ProfileContainer = styled.div`
@@ -90,9 +89,6 @@ const ProfileCard = () => {
           </IconLink>
           <IconLink href="#contact">
             <img src={emailSvg} alt="email icon"></img>
-          </IconLink>
-          <IconLink href="https://www.instagram.com/aka.maycon/">
-            <img src={instagramSvg} alt="instagram icon"></img>
           </IconLink>
         </LinksContainer>
       </ProfileContainer>
