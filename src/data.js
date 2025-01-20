@@ -1,7 +1,21 @@
 const projectsList = [
   {
+    id: "dark",
+    title: "Item Manager - Mobile Design",
+    imageUrl: "./assets/images/dark-souls-app-logo.png",
+    gitHub: false,
+    link: false,
+    page: "/project/dark/",
+    projectImages: [
+      "./assets/images/dark-souls-app-logo.png",
+      "./assets/images/dark-souls-app.png",
+    ],
+    description:
+      "Mobile design of my first app in development with react native, an item manager for the game Dark Souls made by FromSoftware.",
+  },
+  {
     id: "kapple",
-    title: "Kapple - Android & iOS",
+    title: "Kapple - Mobile Design",
     imageUrl: "./assets/images/kapplelogo.png",
     gitHub: false,
     link: false,
@@ -11,11 +25,11 @@ const projectsList = [
       "./assets/images/kapple.png",
     ],
     description:
-      "Kapple is an app conceived by me for those who love to read new stories. With it authors can publish their works, and readers can not only discover these new works but also make donations to support new creators. It's in development for Android and iOS.",
+      "Mobile design of an app to read and discover new books and follow new authors created using Figma",
   },
   {
     id: "cine-now",
-    title: "Cine Now - Android & iOS",
+    title: "Cine Now - Mobile design",
     imageUrl: "./assets/images/cinenow.png",
     gitHub: false,
     link: "https://www.figma.com/community/file/1341511049313764049/cine-now-app",
@@ -27,7 +41,7 @@ const projectsList = [
       "./assets/images/cinenow4.png",
     ],
     description:
-      "Mobile app for online ticket purchases and movie information, with design created using Figma - in development for Android and iOS.",
+      "Mobile design for an app to buy tickets and get movies information created using Figma",
   },
   {
     id: "rent-a-car",
@@ -36,7 +50,10 @@ const projectsList = [
     gitHub: "https://github.com/MayconPCampos/Rent-a-car",
     link: "https://rent-a-car-five.vercel.app/",
     page: "/project/rent-a-car/",
-    projectImages: ["./assets/images/rent-a-car.png"],
+    projectImages: [
+      "./assets/images/rent-a-car.png",
+      "./assets/images/rent-a-car2.png",
+    ],
     description: "Responsive template created with React.",
   },
   {
@@ -52,17 +69,17 @@ const projectsList = [
     ],
     description: "Responsive templates created with HTML, CSS, and Javascript.",
   },
-  {
-    id: "charts-and-sales",
-    title: "Charts & Sales",
-    imageUrl: "./assets/images/chartsales.jpg",
-    gitHub: "https://github.com/MayconPCampos/Django-Sales-Charts-RESTFul-API",
-    link: false,
-    page: "/project/charts-and-sales/",
-    projectImages: ["./assets/images/chartsales.jpg"],
-    description:
-      "A RESTful API developed with Django Rest Framework, it receives data in JSON format and generates a dashboard using Chart JS to visualize the received data in 3 types of charts.",
-  },
+  // {
+  //   id: "charts-and-sales",
+  //   title: "Charts & Sales",
+  //   imageUrl: "./assets/images/chartsales.jpg",
+  //   gitHub: "https://github.com/MayconPCampos/Django-Sales-Charts-RESTFul-API",
+  //   link: false,
+  //   page: "/project/charts-and-sales/",
+  //   projectImages: ["./assets/images/chartsales.jpg"],
+  //   description:
+  //     "A RESTful API developed with Django Rest Framework, it receives data in JSON format and generates a dashboard using Chart JS to visualize the received data in 3 types of charts.",
+  // },
   {
     id: "reactor",
     title: "Reactor",
@@ -80,17 +97,17 @@ const projectsList = [
       "Website for news and statistics of electronic games, with an administrator area for content updates, authentication, and user creation for submitting title data and search functionality.",
     tech: ["HTML", "CSS", "Python", "Flask", "MySQL", "Bootstrap"],
   },
-  {
-    id: "info-invest",
-    title: "Info invest",
-    imageUrl: "./assets/images/infoinvest.jpg",
-    gitHub: "https://github.com/MayconPCampos/Flask-dashboard",
-    link: false,
-    page: "/project/info-invest/",
-    projectImages: ["./assets/images/infoinvest.jpg"],
-    description:
-      "Dashboard with stock chart that displays the values of the last seven days of a stock and calculates the value and percentage of variation, typically used for evaluating the performance of a stock. It also shows company information and recent related news obtained through the News API.",
-  },
+  // {
+  //   id: "info-invest",
+  //   title: "Info invest",
+  //   imageUrl: "./assets/images/infoinvest.jpg",
+  //   gitHub: "https://github.com/MayconPCampos/Flask-dashboard",
+  //   link: false,
+  //   page: "/project/info-invest/",
+  //   projectImages: ["./assets/images/infoinvest.jpg"],
+  //   description:
+  //     "Dashboard with stock chart that displays the values of the last seven days of a stock and calculates the value and percentage of variation, typically used for evaluating the performance of a stock. It also shows company information and recent related news obtained through the News API.",
+  // },
 ];
 
 export const skills = [
@@ -119,16 +136,16 @@ export const skills = [
     progress: 70,
   },
   {
+    title: "Figma",
+    progress: 80,
+  },
+  {
     title: "Python",
     progress: 80,
   },
   {
     title: "Flask",
     progress: 80,
-  },
-  {
-    title: "Django",
-    progress: 50,
   },
   {
     title: "MySQL",

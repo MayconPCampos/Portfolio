@@ -15,11 +15,11 @@ const StyledCard = styled.div`
 `;
 
 const CardImage = styled.img`
-  width: 90%;
+  width: 100%;
   max-height: 380px;
   margin: 0;
   padding: 0;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   cursor: zoom-in;
 `;
 

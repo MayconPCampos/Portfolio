@@ -47,13 +47,14 @@ const ProjectPreview = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: zoom-out;
 `;
 
 const PreviewImage = styled.img`
   width: 50%;
   height: auto;
   margin-bottom: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid #eeeeee;
 
   @media screen and (max-width: 1400px) {
     width: 70%;
@@ -74,7 +75,7 @@ const ProjectImage = styled.img`
   width: ${(props) => props.width};
   margin: 2% 1% 1%;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid #eeeeee;
 
   @media screen and (max-width: 900px) {
     width: 30%;
@@ -111,9 +112,10 @@ const ProjectDetail = () => {
   const HidePreview = (event) => {
     if (
       event.target.id === "preview-screen" ||
-      event.target.id === "preview-images"
+      event.target.id === "preview-images" ||
+      event.target.id === "preview-image"
     ) {
-      setIsPreviewVisible(false);
+      setIsPreviewVisible(!isPreviewVisible);
     }
   };
 
@@ -128,7 +130,7 @@ const ProjectDetail = () => {
           onClick={(event) => HidePreview(event)}
           id="preview-screen"
         >
-          <PreviewImage src={cardImage} alt="" />
+          <PreviewImage id="preview-image" src={cardImage} alt="" />
           <ProjectImages
             id="preview-images"
             onClick={(event) => HidePreview(event)}

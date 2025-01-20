@@ -71,16 +71,15 @@ const About = () => {
                   I've always enjoyed creating and developing new ideas, I'm an
                   enthusiast of new hardware and software technologies as well
                   as new areas of programming, in my free time I enjoy hiking,
-                  composing songs, playing musical instruments, writing,
-                  creating new stories and many other hobbies.
+                  playing musical instruments, writing, and many other hobbies.
                 </Text>
                 <Text type="grey">
                   I have experience in creating and developing web apps and
                   interfaces, also studied mobile development for Android and
-                  iOS, back-end development, data modeling, data science, and
-                  containers. At the moment I'm excited about the new artificial
-                  intelligence technologies and all the different ways to apply
-                  them to speed up and improve front-end and mobile development.
+                  iOS, Mobile design and back-end development. At the moment I'm
+                  excited about the new artificial intelligence technologies and
+                  all the different ways to apply them to speed up and improve
+                  front-end and mobile development.
                 </Text>
               </div>
               <hr></hr>
