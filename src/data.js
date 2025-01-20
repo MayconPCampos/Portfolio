@@ -54,7 +54,7 @@ const projectsList = [
       "./assets/images/rent-a-car.png",
       "./assets/images/rent-a-car2.png",
     ],
-    description: "Responsive template created with React.",
+    description: "Responsive template of a rent car site created with React.",
   },
   {
     id: "templates",
