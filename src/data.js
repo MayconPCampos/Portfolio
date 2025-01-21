@@ -1,31 +1,17 @@
 const projectsList = [
   {
-    id: "dark",
-    title: "Item Manager - Mobile Design",
-    imageUrl: "./assets/images/dark-souls-app-logo.png",
-    gitHub: false,
-    link: false,
-    page: "/project/dark/",
-    projectImages: [
-      "./assets/images/dark-souls-app-logo.png",
-      "./assets/images/dark-souls-app.png",
-    ],
-    description:
-      "Mobile design of my first app in development with react native, an item manager for the game Dark Souls made by FromSoftware.",
-  },
-  {
     id: "kapple",
     title: "Kapple - Mobile Design",
     imageUrl: "./assets/images/kapplelogo.png",
     gitHub: false,
-    link: false,
+    link: "https://www.figma.com/community/file/1463614233338238442/kapple-reading-app",
     page: "/project/kapple/",
     projectImages: [
       "./assets/images/kapplelogo.png",
       "./assets/images/kapple.png",
     ],
     description:
-      "Mobile design of an app to read and discover new books and follow new authors created using Figma",
+      "Mobile design of an app to read and discover new books and follow new authors created using Figma and published for community use.",
   },
   {
     id: "cine-now",
@@ -41,7 +27,21 @@ const projectsList = [
       "./assets/images/cinenow4.png",
     ],
     description:
-      "Mobile design for an app to buy tickets and get movies information created using Figma",
+      "Mobile design for an app to buy tickets and get movies information created using Figma and published for community use.",
+  },
+  {
+    id: "dark",
+    title: "Item Manager - Mobile Design",
+    imageUrl: "./assets/images/dark-souls-app-logo.png",
+    gitHub: false,
+    link: false,
+    page: "/project/dark/",
+    projectImages: [
+      "./assets/images/dark-souls-app-logo.png",
+      "./assets/images/dark-souls-app.png",
+    ],
+    description:
+      "Mobile design of my first app in development with react native, an item manager for the game Dark Souls made by FromSoftware.",
   },
   {
     id: "rent-a-car",
@@ -82,7 +82,7 @@ const projectsList = [
   // },
   {
     id: "reactor",
-    title: "Reactor",
+    title: "Reactor Website",
     imageUrl: "./assets/images/reactor.jpg",
     gitHub: "https://github.com/MayconPCampos/Flask-Website",
     link: false,
