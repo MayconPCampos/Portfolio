@@ -69,17 +69,6 @@ const projectsList = [
     ],
     description: "Responsive templates created with HTML, CSS, and Javascript.",
   },
-  // {
-  //   id: "charts-and-sales",
-  //   title: "Charts & Sales",
-  //   imageUrl: "./assets/images/chartsales.jpg",
-  //   gitHub: "https://github.com/MayconPCampos/Django-Sales-Charts-RESTFul-API",
-  //   link: false,
-  //   page: "/project/charts-and-sales/",
-  //   projectImages: ["./assets/images/chartsales.jpg"],
-  //   description:
-  //     "A RESTful API developed with Django Rest Framework, it receives data in JSON format and generates a dashboard using Chart JS to visualize the received data in 3 types of charts.",
-  // },
   {
     id: "reactor",
     title: "Reactor Website",
@@ -97,17 +86,28 @@ const projectsList = [
       "Website for news and statistics of electronic games, with an administrator area for content updates, authentication, and user creation for submitting title data and search functionality.",
     tech: ["HTML", "CSS", "Python", "Flask", "MySQL", "Bootstrap"],
   },
-  // {
-  //   id: "info-invest",
-  //   title: "Info invest",
-  //   imageUrl: "./assets/images/infoinvest.jpg",
-  //   gitHub: "https://github.com/MayconPCampos/Flask-dashboard",
-  //   link: false,
-  //   page: "/project/info-invest/",
-  //   projectImages: ["./assets/images/infoinvest.jpg"],
-  //   description:
-  //     "Dashboard with stock chart that displays the values of the last seven days of a stock and calculates the value and percentage of variation, typically used for evaluating the performance of a stock. It also shows company information and recent related news obtained through the News API.",
-  // },
+  {
+    id: "info-invest",
+    title: "Info invest",
+    imageUrl: "./assets/images/infoinvest.jpg",
+    gitHub: "https://github.com/MayconPCampos/Flask-dashboard",
+    link: false,
+    page: "/project/info-invest/",
+    projectImages: ["./assets/images/infoinvest.jpg"],
+    description:
+      "Dashboard with stock chart that displays the values of the last seven days of a stock and calculates the value and percentage of variation, typically used for evaluating the performance of a stock. It also shows company information and recent related news obtained through the News API.",
+  },
+  {
+    id: "charts-and-sales",
+    title: "Charts & Sales",
+    imageUrl: "./assets/images/chartsales.jpg",
+    gitHub: "https://github.com/MayconPCampos/Django-Sales-Charts-RESTFul-API",
+    link: false,
+    page: "/project/charts-and-sales/",
+    projectImages: ["./assets/images/chartsales.jpg"],
+    description:
+      "A RESTful API developed with Django Rest Framework, it receives data in JSON format and generates a dashboard using Chart JS to visualize the received data in 3 types of charts.",
+  },
 ];
 
 export const skills = [
