@@ -33,7 +33,7 @@ const projectsList = [
     id: "dark",
     title: "Item Manager - Mobile Design",
     imageUrl: "./assets/images/dark-souls-app-logo.png",
-    gitHub: false,
+    gitHub: "https://github.com/MayconPCampos/dark-souls-app",
     link: false,
     page: "/project/dark/",
     projectImages: [
