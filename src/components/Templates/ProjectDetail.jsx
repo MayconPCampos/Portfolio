@@ -137,9 +137,12 @@ const ProjectDetail = () => {
             onClick={(event) => HidePreview(event)}
           >
             {project.projectImages.map((image) => {
+              let isMiniCardVisible =
+                project.projectImages.length > 1 ? "block" : "none";
               return (
                 <ProjectImage
                   width={"10%"}
+                  display={isMiniCardVisible}
                   key={image}
                   src={image}
                   onClick={() => ChangeCardImage(image)}
