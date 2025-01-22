@@ -73,6 +73,7 @@ const ProjectImages = styled.div`
 
 const ProjectImage = styled.img`
   width: ${(props) => props.width};
+  display: ${(props) => props.display};
   margin: 2% 1% 1%;
   cursor: pointer;
   border: 1px solid #eeeeee;
@@ -179,9 +180,12 @@ const ProjectDetail = () => {
               </div>
               <ProjectImages>
                 {project.projectImages.map((image) => {
+                  let isMiniCardVisible =
+                    project.projectImages.length > 1 ? "block" : "none";
                   return (
                     <ProjectImage
                       width={"20%"}
+                      display={isMiniCardVisible}
                       key={image}
                       src={image}
                       onClick={() => ChangeCardImage(image)}
